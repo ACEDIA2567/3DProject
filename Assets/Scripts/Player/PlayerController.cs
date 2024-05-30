@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 platformDir;
     private Vector2 moveInput;
     private bool runCheck;
-    
+
     [Header("Jump")]
     public float jumpPower;
     public float jumpSp;
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-        condition = GetComponent<PlayerCondition>(); 
+        condition = GetComponent<PlayerCondition>();
     }
 
     private void Start()
@@ -83,16 +83,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        Vector3 moveDir;
-        if (LadderCheck())
-        {   
-            moveDir = transform.up * moveInput.y;
-        }
-        else
-        {
-            moveDir = transform.forward * moveInput.y + transform.right * moveInput.x;
-        }
-
+        Vector3 moveDir = transform.forward * moveInput.y + transform.right * moveInput.x;
         if (runCheck && condition.UseSp(runSp))
         {
             moveDir *= runSpeed + addSpeed;
@@ -102,10 +93,7 @@ public class PlayerController : MonoBehaviour
             moveDir *= moveSpeed + addSpeed;
         }
 
-        if (!LadderCheck())
-        {
-            moveDir.y = rigidbody.velocity.y;
-        }
+        moveDir.y = rigidbody.velocity.y;
         rigidbody.velocity = moveDir + platformDir;
     }
 
@@ -129,7 +117,7 @@ public class PlayerController : MonoBehaviour
         {
             if (jumpCount >= 1 && condition.UseSp(jumpSp))
             {
-                rigidbody.AddForce(Vector2.up * (jumpPower + addJump ), ForceMode.Impulse);
+                rigidbody.AddForce(Vector2.up * (jumpPower + addJump), ForceMode.Impulse);
                 jumpCount -= 1;
             }
         }
@@ -151,13 +139,21 @@ public class PlayerController : MonoBehaviour
 
     public void OnRun(InputAction.CallbackContext context)
     {
-        if(context.phase == InputActionPhase.Started)
+        if (context.phase == InputActionPhase.Started)
         {
             runCheck = true;
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
             runCheck = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            jumpCount = 1;
         }
     }
 
