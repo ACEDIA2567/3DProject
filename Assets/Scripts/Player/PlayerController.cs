@@ -83,7 +83,16 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        Vector3 moveDir = transform.forward * moveInput.y + transform.right * moveInput.x;
+        Vector3 moveDir;
+        if (LadderCheck())
+        {
+            moveDir = transform.up * moveInput.y + transform.right * moveInput.x;
+        }
+        else
+        {
+            moveDir = transform.forward * moveInput.y + transform.right * moveInput.x;
+        }
+
         if (runCheck && condition.UseSp(runSp))
         {
             moveDir *= runSpeed + addSpeed;
@@ -93,7 +102,10 @@ public class PlayerController : MonoBehaviour
             moveDir *= moveSpeed + addSpeed;
         }
 
-        moveDir.y = rigidbody.velocity.y;
+        if (!LadderCheck()) 
+        {
+            moveDir.y = rigidbody.velocity.y;
+        } 
         rigidbody.velocity = moveDir + platformDir;
     }
 
@@ -159,10 +171,12 @@ public class PlayerController : MonoBehaviour
 
     bool LadderCheck()
     {
-        Ray rays = new Ray(transform.position, Vector3.forward);
-        if (Physics.Raycast(rays, 1.0f, LayerMask.NameToLayer("Ladder")))
+        Ray rays = new Ray(transform.position + new Vector3(0, -0.7f, 0), transform.forward);
+        int layerMask = LayerMask.GetMask("Ladder"); // 레이어 이름에 해당하는 비트마스크 얻기
+
+        if (Physics.Raycast(rays, 0.7f, layerMask))
         {
-            Debug.Log("ㅅㅂ");
+            Debug.Log("da");
             return true;
         }
         return false;
