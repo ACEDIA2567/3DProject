@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody rigidbody;
     PlayerCondition condition;
 
+    // Ladder 정보
+    private int ladderLayerMask;
+    private Vector3 ladderRayHight = new Vector3(0, -0.7f, 0);
+    private Ray rays;
+
     [Header("Camera")]
     public Transform cameraTransform;
     public float rotSpeed;
@@ -43,6 +48,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        ladderLayerMask = LayerMask.GetMask("Ladder");
     }
 
     void FixedUpdate()
@@ -171,12 +177,9 @@ public class PlayerController : MonoBehaviour
 
     bool LadderCheck()
     {
-        Ray rays = new Ray(transform.position + new Vector3(0, -0.7f, 0), transform.forward);
-        int layerMask = LayerMask.GetMask("Ladder"); // 레이어 이름에 해당하는 비트마스크 얻기
-
-        if (Physics.Raycast(rays, 0.7f, layerMask))
+        rays = new Ray(transform.position + ladderRayHight, transform.forward);
+        if (Physics.Raycast(rays, 0.6f, ladderLayerMask))
         {
-            Debug.Log("da");
             return true;
         }
         return false;
