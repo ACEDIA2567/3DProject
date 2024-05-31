@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -27,6 +28,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
 
     public void Set()
     {
+        // 데이터 (null)여부 확인
         if (data == null)
         {
             Clear();
@@ -48,6 +50,28 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         slotQuantity = 0;
     }
 
+    public void DelayCheck()
+    {
+        if (data == null)
+        {
+            Clear();
+            return;
+        }
+        else if (data.type != ItemType.Consumable)
+        {
+            return;
+        }
+
+        if (delayTime == data.delayTime)
+        {
+            GameManager.Instance.Player.EndCo(TImePlus());
+        }
+        else
+        {
+            GameManager.Instance.Player.StartCo(TImePlus());
+        }
+    }
+
     public void Use()
     {
         if (data.type == ItemType.Consumable)
@@ -63,12 +87,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
     IEnumerator TImePlus()
     {
         delayIcon.fillAmount = 0;
-        while (delayIcon.fillAmount < 1.0f)
+        while (delayIcon.fillAmount < 1.0f || data == null)
         {
             delayTime += Time.deltaTime;
 
             if (data != null)
             {
+                delayTime = Mathf.Min(delayTime, data.delayTime);
                 delayIcon.fillAmount = delayTime / data.delayTime;
             }
             yield return null;
@@ -106,6 +131,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         else
         {
             delayTime = 0;
+            Debug.Log(data);
             GameManager.Instance.Player.StartCo(TImePlus());
             Set();
         }
@@ -135,14 +161,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         // 아이템 정보 플레이어한테 전달
         GameManager.Instance.Player.currentData = this.data;
         GameManager.Instance.Player.dataQuantity = slotQuantity;
+        GameManager.Instance.Player.dataDelayTime = delayTime;
     }
 
     // 드래그 끝났을 때
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("드래그 끝");
-        this.data = GameManager.Instance.Player.currentData;
-        this.slotQuantity = GameManager.Instance.Player.dataQuantity;
+        data = GameManager.Instance.Player.currentData;
+        slotQuantity = GameManager.Instance.Player.dataQuantity;
+        delayTime = GameManager.Instance.Player.dataDelayTime;
+        DelayCheck();
         Set();
     }
 
@@ -168,8 +197,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
             {
                 // 개수를 추가할 수 있으면 개수 추가
                 this.slotQuantity += GameManager.Instance.Player.dataQuantity;
-                GameManager.Instance.Player.currentData = null;
-                GameManager.Instance.Player.dataQuantity = 0;
+                GameManager.Instance.Player.ItemClear();
             }
         }
         // 드롭한 장소에 데이터가 없다면
@@ -177,20 +205,25 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         {
             data = GameManager.Instance.Player.currentData;
             slotQuantity = GameManager.Instance.Player.dataQuantity;
-            GameManager.Instance.Player.currentData = null;
-            GameManager.Instance.Player.dataQuantity = 0;
+            delayTime = GameManager.Instance.Player.dataDelayTime;
+            GameManager.Instance.Player.ItemClear();
         }
         // 아이템의 정보가 다르면 위치 변경
         else
         {
             ItemData cloneData = data;
             int cloneInt = slotQuantity;
+            float cloneDelayTime = delayTime;
             data = GameManager.Instance.Player.currentData;
             slotQuantity = GameManager.Instance.Player.dataQuantity;
+            delayTime = GameManager.Instance.Player.dataDelayTime;
 
             GameManager.Instance.Player.currentData = cloneData;
             GameManager.Instance.Player.dataQuantity = cloneInt;
+            GameManager.Instance.Player.dataDelayTime = cloneDelayTime;
         }
+
+        DelayCheck();
         Set();
     }
 }
