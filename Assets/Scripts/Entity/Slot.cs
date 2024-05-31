@@ -20,14 +20,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     PlayerCondition condition;
     PlayerController controller;
-    UICursor uiCursor;
 
     private void Start()
     {
         condition = GameManager.Instance.Player.condition;
         controller = GameManager.Instance.Player.controller;
-        uiCursor = GameManager.Instance.Player.ItemInfoObject;
-        
     }
 
     public void Set()
@@ -122,6 +119,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         }
         else if(eventData.button == PointerEventData.InputButton.Middle)
         {
+            UICursor uiCursor = GameManager.Instance.Player.ItemInfoObject;
             uiCursor.transform.position = eventData.position;
             uiCursor.UIUpdate(data);
         }
