@@ -75,6 +75,7 @@ public class UIInventory : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 inventoryObject.SetActive(false);
+                GameManager.Instance.Player.ItemInfoObject.gameObject.SetActive(false);
             }
             else
             {
