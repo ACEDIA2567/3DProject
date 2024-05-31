@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public PlayerCondition condition;
 
     public ItemData currentData;
+    public int dataQuantity = 0;
     public Action AddItem;
 
     public UICursor ItemInfoObject;

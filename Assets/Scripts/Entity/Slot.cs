@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class Slot : MonoBehaviour, IPointerClickHandler
+public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
     public ItemData data;
     public Image icon;
@@ -27,6 +27,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public void Set()
     {
+        if (data == null)
+        {
+            Clear();
+            return;
+        }
         icon.gameObject.SetActive(true);
         delayIcon.gameObject.SetActive(true);
         icon.sprite = data.icon;
@@ -121,5 +126,71 @@ public class Slot : MonoBehaviour, IPointerClickHandler
             uiCursor.transform.position = eventData.position;
             uiCursor.UIUpdate(data);
         }
+    }
+
+    // 드래그 시작
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        Debug.Log("드래그 시작");
+        // 아이템 정보 플레이어한테 전달
+        GameManager.Instance.Player.currentData = this.data;
+        GameManager.Instance.Player.dataQuantity = slotQuantity;
+    }
+
+    // 드래그 끝났을 때
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        Debug.Log("드래그 끝");
+        this.data = GameManager.Instance.Player.currentData;
+        this.slotQuantity = GameManager.Instance.Player.dataQuantity;
+        Set();
+    }
+
+    // 드래그 중
+    public void OnDrag(PointerEventData eventData)
+    {
+        // 해당 아이템 아이콘의 위치를 마우스 위치와 동일하게
+
+    }
+
+    // 이동할 슬롯의 정보
+    public void OnDrop(PointerEventData eventData)
+    {
+        Debug.Log("아이템 드랍");
+        // 플레이어의 currentData가 있는지 확인
+        if (GameManager.Instance.Player.currentData == null) return;
+
+        // 아이템의 정보가 같은지 확인 
+        if (GameManager.Instance.Player.currentData == this.data)
+        {
+            // 후 개수 확인
+            if (GameManager.Instance.Player.dataQuantity + this.slotQuantity < this.data.maxCount)
+            {
+                // 개수를 추가할 수 있으면 개수 추가
+                this.slotQuantity += GameManager.Instance.Player.dataQuantity;
+                GameManager.Instance.Player.currentData = null;
+                GameManager.Instance.Player.dataQuantity = 0;
+            }
+        }
+        // 드롭한 장소에 데이터가 없다면
+        else if (data == null)
+        {
+            data = GameManager.Instance.Player.currentData;
+            slotQuantity = GameManager.Instance.Player.dataQuantity;
+            GameManager.Instance.Player.currentData = null;
+            GameManager.Instance.Player.dataQuantity = 0;
+        }
+        // 아이템의 정보가 다르면 위치 변경
+        else
+        {
+            ItemData cloneData = data;
+            int cloneInt = slotQuantity;
+            data = GameManager.Instance.Player.currentData;
+            slotQuantity = GameManager.Instance.Player.dataQuantity;
+
+            GameManager.Instance.Player.currentData = cloneData;
+            GameManager.Instance.Player.dataQuantity = cloneInt;
+        }
+        Set();
     }
 }
