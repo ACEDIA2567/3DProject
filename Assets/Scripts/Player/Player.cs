@@ -8,13 +8,16 @@ public class Player : MonoBehaviour
 {
     public PlayerController controller;
     public PlayerCondition condition;
+    
 
     public ItemData currentData;
     public int dataQuantity = 0;
     public float dataDelayTime = 0;
     public Action AddItem;
+    public Action ViewProduce;
 
     public UICursor ItemInfoObject;
+    public UIInventory inventory;
 
     private void Awake()
     {

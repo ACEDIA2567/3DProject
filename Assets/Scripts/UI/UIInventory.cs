@@ -20,6 +20,7 @@ public class UIInventory : MonoBehaviour
             slots[i].index = i;
         }
         inventoryObject.SetActive(false);
+        GameManager.Instance.Player.inventory = this;
     }
 
     void Add()
@@ -65,6 +66,47 @@ public class UIInventory : MonoBehaviour
                 slots[i].Clear();
             }
         }
+    }
+
+    public bool CheckItem(string name, int value)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].data == null)
+            {
+                continue;
+            }
+
+            // 아이템이 있다면
+            if (slots[i].data.itemName == name)
+            {
+                // 제작 가능한 아이템보다 개수가 많다면
+                if (slots[i].slotQuantity >= value)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void RemoveItem(string name, int value)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].data == null)
+            {
+                continue;
+            }
+
+            // 아이템과 같은 이름 검색
+            if (slots[i].data.itemName == name)
+            {
+                slots[i].slotQuantity -= value;
+                break;
+            }
+        }
+        
     }
 
     public void OnInventory(InputAction.CallbackContext context)
