@@ -5215,6 +5215,8 @@ MonoBehaviour:
   controller: {fileID: 0}
   condition: {fileID: 0}
   currentData: {fileID: 0}
+  dataQuantity: 0
+  dataDelayTime: 0
   ItemInfoObject: {fileID: 0}
 --- !u!1 &1677284573
 GameObject:
