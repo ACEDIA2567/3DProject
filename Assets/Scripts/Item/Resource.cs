@@ -10,11 +10,11 @@ public class Resource : MonoBehaviour
 
     public void Gather(Vector3 hitPoint, Vector3 hitNomal)
     {
-        for(int i = 0; i < quantityPerHit; i++0)
+        for(int i = 0; i < quantityPerHit; i++)
         {
             if (capacy <= 0) break;
             capacy -= 1;
-            Instantiate(itemToGive.dropPrefab, hitPoint = Vector3.up, Quaternion.LookRotation(hitNormal, Vector3.up));
+            //Instantiate(itemToGive.dropPrefab, hitPoint = Vector3.up, Quaternion.LookRotation(hitNormal, Vector3.up));
         }
     }
 }
