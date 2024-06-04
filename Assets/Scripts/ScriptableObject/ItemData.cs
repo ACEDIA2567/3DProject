@@ -28,7 +28,8 @@ public enum ItemType
 {
     Consumable,
     Resource,
-    Equipment
+    Equipment,
+    Build
 }
 
 [Serializable]
