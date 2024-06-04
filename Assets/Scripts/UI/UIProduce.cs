@@ -8,17 +8,10 @@ using UnityEngine.InputSystem;
 public class UIProduce : MonoBehaviour
 {
     public GameObject ProduceObject;
-    public Transform ProduceTransform;
-
-    Produce[] produces;
 
     void Start()
     {
-        produces = new Produce[ProduceTransform.childCount];
-        for (int i = 0; i < produces.Length; i++)
-        {
-            produces[i] = ProduceTransform.GetChild(i).GetComponent<Produce>();
-        }
+
     }
 
     // 力累过 UI 厚/劝己拳 贸府
