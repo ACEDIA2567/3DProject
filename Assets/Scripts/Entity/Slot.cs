@@ -82,6 +82,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         {
             Debug.Log("장비 아직 미정");
         }
+        else if(data.type == ItemType.Build)
+        {
+            GameManager.Instance.Player.creaft.GetData(data);
+        }
     }
 
     IEnumerator TImePlus()

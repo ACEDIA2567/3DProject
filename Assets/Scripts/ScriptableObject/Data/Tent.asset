@@ -16,7 +16,9 @@ MonoBehaviour:
   description: "\uC7A0\uC744 \uC798 \uC218 \uC788\uAC8C \uD574\uC900\uB2E4."
   type: 3
   icon: {fileID: 21300000, guid: c0645f5feb1a7384a96a918e0d25f41b, type: 3}
+  dropPrefab: {fileID: 4805946683060163461, guid: 8c207dc3dcc8d464f81672d6654331ce, type: 3}
   maxCount: 1
   count: 1
   consumableData: []
   delayTime: 0
+  ViewObject: {fileID: 3795123219962478304, guid: 815ecf7f72aabf444a26a21e84f1ae07, type: 3}
