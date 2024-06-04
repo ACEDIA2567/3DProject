@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     public float rotSpeed;
     private Vector2 mouseDelta;
     private float cameraRotX;
+    internal bool canLook;
 
     private void Awake()
     {

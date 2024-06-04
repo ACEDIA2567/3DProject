@@ -19,6 +19,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
 
     PlayerCondition condition;
     PlayerController controller;
+    internal bool equipped;
 
     private void Start()
     {

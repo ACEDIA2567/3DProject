@@ -9,6 +9,10 @@ public class UIInventory : MonoBehaviour
     public GameObject inventoryObject;
     private Slot[] slots;
 
+    int curEquipIndex;
+    private int selectedItemIndex;
+    private object selectedItem;
+
     private void Start()
     {
         GameManager.Instance.Player.AddItem += Add;
@@ -129,5 +133,36 @@ public class UIInventory : MonoBehaviour
                 inventoryObject.SetActive(true);
             }
         }
+    }
+    public void OnEquipButton()
+    {
+        if (slots[curEquipIndex].equipped)
+        {
+            UnEquip(curEquipIndex);
+        }
+
+        slots[selectedItemIndex].equipped = true;
+        curEquipIndex = selectedItemIndex;
+        GameManager.Instance.Player.equip.EquopNew(selectedItem);
+        UpdateUI();
+
+        SelectItem(selecetedItemIndex);
+    }
+
+    void UnEquip(int index)
+    {
+        slots[index].equipped = false;
+        GameManager.Instance.Player.equip.UnEquip();
+        UpdateUI();
+
+        if(selectedItemIndex == index)
+        {
+            SelectItem(selectedItemIndex);
+        }
+    }
+
+    public void OnUnEquipButton()
+    {
+
     }
 }

@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     public PlayerController controller;
     public PlayerCondition condition;
+    public Equipment equip;
     
 
     public ItemData currentData;
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour
         GameManager.Instance.Player = this;
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerCondition>();
+        equip = GetComponent<Equipment>();
     }
 
     public void StartCo(IEnumerator coroutine)

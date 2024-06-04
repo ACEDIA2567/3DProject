@@ -10,7 +10,10 @@ public class NewBehaviourScript : MonoBehaviour
 
     private PlayerController controller;
     private PlayerCondition condition;
-    
+
+    private object curEquipIndex;
+
+
     void Start()
     {
         controller = GetComponent<PlayerController>();
