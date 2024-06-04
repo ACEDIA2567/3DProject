@@ -103,6 +103,10 @@ public class UIInventory : MonoBehaviour
             if (slots[i].data.itemName == name)
             {
                 slots[i].slotQuantity -= value;
+                if (slots[i].slotQuantity < 1 )
+                {
+                    slots[i].Clear();
+                }
                 break;
             }
         }

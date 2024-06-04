@@ -14,7 +14,7 @@ public class Condition : MonoBehaviour
 
     private void Start()
     {
-        currentValue = maxValue / 2;
+        currentValue = maxValue;
     }
 
     private void Update()
