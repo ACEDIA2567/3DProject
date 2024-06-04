@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b403780a280f1644cb5e6206c49eb135, type: 3}
-  m_Name: Ax
+  m_Name: Stone
   m_EditorClassIdentifier: 
-  itemName: "\uB3C4\uB07C"
-  description: "\uB098\uBB34\uB97C \uBCA0\uC5B4 \uBAA9\uC7AC\uB97C \uC5BB\uC744 \uC218
-    \uC788\uB2E4."
-  type: 2
-  icon: {fileID: 21300000, guid: 172774604c1bee84185a69041576525b, type: 3}
-  maxCount: 1
+  itemName: "\uB3CC"
+  description: "\uBC14\uB2E5\uC5D0\uC11C \uD754\uD558\uAC8C \uBCFC \uC218 \uC788\uB294
+    \uB3CC\uC774\uB2E4."
+  type: 1
+  icon: {fileID: 21300000, guid: 583675a75bcb2a941ac555b9ccd513a9, type: 3}
+  maxCount: 9
   count: 1
   consumableData: []
   delayTime: 0
