@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
     [Header("Move")]
@@ -22,15 +21,15 @@ public class PlayerController : MonoBehaviour
     public float jumpPower;
     public float jumpSp;
     private float addJump;
-    private int jumpCount = 1;
+    private int jumpCount;
 
     // Component
     Rigidbody rigidbody;
     PlayerCondition condition;
 
-    // Ladder Á¤º¸
+    // Ladder ï¿½ï¿½ï¿½ï¿½
     private int ladderLayerMask;
-    private Vector3 ladderRayHight = new Vector3(0, -0.7f, 0);
+    private Vector3 ladderRayHight;
     private Ray rays;
 
     [Header("Camera")]
@@ -47,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        ladderRayHight = new Vector3(0, -0.7f, 0);
+        jumpCount = 1;
         Cursor.lockState = CursorLockMode.Locked;
         ladderLayerMask = LayerMask.GetMask("Ladder");
     }
@@ -118,7 +119,7 @@ public class PlayerController : MonoBehaviour
     private void Look()
     {
         cameraRotX += mouseDelta.y * rotSpeed;
-        // »óÈ­ °¢µµ °íÁ¤
+        // ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         cameraRotX = Mathf.Clamp(cameraRotX, -65, 65);
         cameraTransform.localEulerAngles = new Vector3(-cameraRotX, 0, 0);
         transform.eulerAngles += new Vector3(0, mouseDelta.x * rotSpeed, 0);
@@ -143,12 +144,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        // ¹öÆ°À» ´©¸£´Â ÁßÀÌ¶ó¸é
+        // ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½
         if (context.phase == InputActionPhase.Performed)
         {
             moveInput = context.ReadValue<Vector2>();
         }
-        // ¹öÆ°À» ¾È´­·¶À» ¶§
+        // ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
         else if (context.phase == InputActionPhase.Canceled)
         {
             moveInput = Vector2.zero;
