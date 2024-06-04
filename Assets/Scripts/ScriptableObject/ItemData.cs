@@ -46,7 +46,7 @@ public class ItemData : ScriptableObject
     public string description;
     public ItemType type;
     public Sprite icon;
-    //public GameObject dropPrefab;
+    public GameObject dropPrefab;
 
     public int maxCount;
     public int count;

@@ -5,7 +5,7 @@ using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
+
 
 public class PlayerController : MonoBehaviour
 {
