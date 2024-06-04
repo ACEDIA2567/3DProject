@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     public int dataQuantity = 0;
     public float dataDelayTime = 0;
     public Action AddItem;
-    public Action ViewProduce;
 
     public UICursor ItemInfoObject;
     public UIInventory inventory;
