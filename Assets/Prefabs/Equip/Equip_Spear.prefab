@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c360e099f30d4b944959bac352072202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0
-  attackDistance: 0
+  attackRate: 1
+  attackDistance: 2
   doesGatherResources: 0
-  doesDealDamage: 0
-  damage: 0
+  doesDealDamage: 1
+  damage: 10
 --- !u!1001 &5986365290996015523
 PrefabInstance:
   m_ObjectHideFlags: 0

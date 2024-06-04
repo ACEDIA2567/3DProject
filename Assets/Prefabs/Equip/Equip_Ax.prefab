@@ -128,11 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c360e099f30d4b944959bac352072202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0
-  attackDistance: 0
-  doesGatherResources: 0
+  attackRate: 0.8
+  attackDistance: 1
+  doesGatherResources: 1
   doesDealDamage: 0
-  damage: 0
+  damage: 4
 --- !u!1 &6945659645639382107
 GameObject:
   m_ObjectHideFlags: 0
