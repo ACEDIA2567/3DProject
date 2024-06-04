@@ -54,4 +54,7 @@ public class ItemData : ScriptableObject
 
     public ConsumableData[] consumableData;
     public float delayTime;
+
+    [Header("Equip")]
+    public GameObject equipPrefab;
 }
