@@ -42,6 +42,11 @@ public class DayNightCycle : MonoBehaviour
         RenderSettings.reflectionIntensity = reflectionIntensityMultiplier.Evaluate(time);
     }
 
+    public void ChangeMorning()
+    {
+        time = 0.2f;
+    }
+
     void UpdateLighting(Light lightSource, Gradient gradient, AnimationCurve intensityCurve)
     {
         float intensity = intensityCurve.Evaluate(time);
