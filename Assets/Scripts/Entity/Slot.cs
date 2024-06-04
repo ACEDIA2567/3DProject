@@ -118,6 +118,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
                 case ConsumableType.Sp:
                     condition.Restore(consumable.value);
                     break;
+                case ConsumableType.Ep:
+                    condition.Eat(consumable.value);
+                    break;
+                case ConsumableType.Wp:
+                    condition.Drink(consumable.value);
+                    break;
                 case ConsumableType.SpeedUp:
                     controller.StartCoroutine(controller.AbilityUp(consumable.value, true));
                     break;

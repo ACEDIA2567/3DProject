@@ -20,6 +20,8 @@ public enum ConsumableType
 {
     Hp,
     Sp,
+    Ep,
+    Wp,
     SpeedUp,
     JumpUp
 }
