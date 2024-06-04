@@ -29,7 +29,6 @@ public class UIProduce : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.None;
                 ProduceObject.SetActive(true);
-                GameManager.Instance.Player.ViewProduce?.Invoke();
             }
         }
     }
