@@ -82,6 +82,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         {
             Debug.Log("장비 아직 미정");
         }
+        else if(data.type == ItemType.Build)
+        {
+            GameManager.Instance.Player.creaft.GetData(data, index);
+        }
     }
 
     IEnumerator TImePlus()
@@ -113,6 +117,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
                     break;
                 case ConsumableType.Sp:
                     condition.Restore(consumable.value);
+                    break;
+                case ConsumableType.Ep:
+                    condition.Eat(consumable.value);
+                    break;
+                case ConsumableType.Wp:
+                    condition.Drink(consumable.value);
                     break;
                 case ConsumableType.SpeedUp:
                     controller.StartCoroutine(controller.AbilityUp(consumable.value, true));
@@ -148,7 +158,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
         else if(eventData.button == PointerEventData.InputButton.Middle)
         {
-            UICursor uiCursor = GameManager.Instance.Player.ItemInfoObject;
+            UICursor uiCursor = GameManager.Instance.Player.cursor;
             uiCursor.transform.position = eventData.position;
             uiCursor.UIUpdate(data);
         }

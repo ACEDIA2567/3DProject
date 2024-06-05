@@ -12,8 +12,8 @@ public class MovingObject : MonoBehaviour
     public float moveSpeed;
 
     private Vector3 moveDirction = Vector3.zero;
-    private Rigidbody rigidbody;
-    private PlayerController Controller = new PlayerController();
+    new private Rigidbody rigidbody;
+    private PlayerController Controller;
 
     private void Awake()
     {

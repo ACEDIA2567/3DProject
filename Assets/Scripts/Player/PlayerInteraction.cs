@@ -8,11 +8,16 @@ public class PlayerInteraction : MonoBehaviour
 {
     public float rayDistance;
     public LayerMask interactionLayer;
+    public LayerMask tentLayer;
+    public LayerMask waterLayer;
     public TextMeshProUGUI interactionText;
     public GameObject sleepUI;
+    public GameObject StoneUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
-    private Camera camera;
+    private bool waterCheck = false;
+    private bool sleepCheck = false;
+    new private Camera camera;
 
     private IItemInfo itemInfo;
     private GameObject interactionObject;
@@ -38,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if(Physics.Raycast(ray, out hit, rayDistance, interactionLayer))
         {
-            // ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® UIï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            // ÇØ´ç ¿ÀºêÁ§Æ® UI¿¡ ³ª¿À°Ô
             if (interactionObject == null)
             {
                 interactionObject = hit.collider.gameObject;
@@ -46,8 +51,23 @@ public class PlayerInteraction : MonoBehaviour
                 VoidText();
             }
         }
+        else if (Physics.Raycast(ray, out hit, rayDistance, tentLayer))
+        {
+            // Àá Àß °ÍÀÎÁö ¿©ºÎ È®ÀÎ
+            sleepCheck = true;
+            itemInfo = hit.collider.GetComponent<IItemInfo>();
+            VoidText();
+        }
+        else if (Physics.Raycast(ray, out hit, rayDistance, waterLayer))
+        {
+            if (waterCheck)
+            {
+                GameManager.Instance.Player.condition.Drink(10);
+            }
+        }
         else
         {
+            sleepCheck = false;
             interactionObject = null;
             itemInfo = null;
             interactionText.gameObject.SetActive(false);
@@ -72,12 +92,20 @@ public class PlayerInteraction : MonoBehaviour
                 interactionText.gameObject.SetActive(false);
             }
         }
-        else if (context.phase == InputActionPhase.Started && sleepCheck)
+        else if (context.phase == InputActionPhase.Started)
         {
-            Cursor.lockState = CursorLockMode.None;
-            sleepUI.SetActive(true);
-            sleepCheck = false;
-            itemInfo = null;
+            waterCheck = true;
+
+            if (sleepCheck)
+            {
+                sleepUI.SetActive(true);
+                sleepCheck = false;
+                itemInfo = null;
+            }
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            waterCheck = false;
         }
     }
 }

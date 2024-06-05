@@ -24,13 +24,14 @@ public class UIProduce : MonoBehaviour
         {
             if (ProduceObject.activeInHierarchy)
             {
-                Cursor.lockState = CursorLockMode.Locked;
+                GameManager.Instance.Player.cursor.craftCursor = true;
+                GameManager.Instance.Player.cursor.CursorCheck();
                 ProduceObject.SetActive(false);
-                GameManager.Instance.Player.ItemInfoObject.gameObject.SetActive(false);
             }
             else
             {
-                Cursor.lockState = CursorLockMode.None;
+                GameManager.Instance.Player.cursor.craftCursor = false;
+                GameManager.Instance.Player.cursor.CursorCheck();
                 ProduceObject.SetActive(true);
                 GameManager.Instance.Player.ViewProduce?.Invoke();
             }

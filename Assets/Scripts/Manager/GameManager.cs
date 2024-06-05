@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = new GameObject("CharacterManager").AddComponent<GameManager>();
+                instance = new GameObject("GameManager").AddComponent<GameManager>();
             }
             return instance;
         }
@@ -24,9 +24,24 @@ public class GameManager : MonoBehaviour
         set { player = value; }
     }
 
+    // 게임 클리어 확인
+    public bool fireCheck = false;
+    public bool stoneSOS = false;
+    public GameObject helicopter;
+    public DayNightCycle dayNightCycle;
+
     private void Awake()
     {
         if (instance != null) return;
         instance = this;
+    }
+
+    public void EndingCheck()
+    {
+        // 모닥불과 SOS돌을 모두 설치 했다면
+        if(fireCheck && stoneSOS)
+        {
+            dayNightCycle.EndingStart();
+        }
     }
 }
