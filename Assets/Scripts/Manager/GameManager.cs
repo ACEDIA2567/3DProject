@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = new GameObject("CharacterManager").AddComponent<GameManager>();
+                instance = new GameObject("GameManager").AddComponent<GameManager>();
             }
             return instance;
         }
@@ -24,9 +24,23 @@ public class GameManager : MonoBehaviour
         set { player = value; }
     }
 
+    public GameObject sleepUI;
+
     private void Awake()
     {
         if (instance != null) return;
         instance = this;
+    }
+
+    public void CursorActive()
+    {
+        if (Cursor.lockState == CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else if(Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }

@@ -8,9 +8,12 @@ public class PlayerInteraction : MonoBehaviour
 {
     public float rayDistance;
     public LayerMask interactionLayer;
+    public LayerMask tentLayer;
     public TextMeshProUGUI interactionText;
+    public GameObject sleepUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
+    private bool sleepCheck = false;
     private Camera camera;
 
     private IItemInfo itemInfo;
@@ -45,8 +48,16 @@ public class PlayerInteraction : MonoBehaviour
                 VoidText();
             }
         }
+        else if (Physics.Raycast(ray, out hit, rayDistance, tentLayer))
+        {
+            // 잠 잘 것인지 여부 확인
+            sleepCheck = true;
+            itemInfo = hit.collider.GetComponent<IItemInfo>();
+            VoidText();
+        }
         else
         {
+            sleepCheck = false;
             interactionObject = null;
             itemInfo = null;
             interactionText.gameObject.SetActive(false);
@@ -70,6 +81,13 @@ public class PlayerInteraction : MonoBehaviour
                 itemInfo = null;
                 interactionText.gameObject.SetActive(false);
             }
+        }
+        else if (context.phase == InputActionPhase.Started && sleepCheck)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            sleepUI.SetActive(true);
+            sleepCheck = false;
+            itemInfo = null;
         }
     }
 }
