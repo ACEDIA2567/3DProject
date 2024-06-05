@@ -14,14 +14,10 @@ public class UIProduce : MonoBehaviour
 
     void Start()
     {
-        produces = new Produce[ProduceTransform.childCount];
-        for (int i = 0; i < produces.Length; i++)
-        {
-            produces[i] = ProduceTransform.GetChild(i).GetComponent<Produce>();
-        }
+        ProduceObject.SetActive(false);
     }
 
-    // Á¦ÀÛ¹ý UI ºñ/È°¼ºÈ­ Ã³¸®
+    // ï¿½ï¿½ï¿½Û¹ï¿½ UI ï¿½ï¿½/È°ï¿½ï¿½È­ Ã³ï¿½ï¿½
     public void OnProduce(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
