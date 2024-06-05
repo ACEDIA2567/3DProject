@@ -9401,8 +9401,12 @@ MonoBehaviour:
   tentLayer:
     serializedVersion: 2
     m_Bits: 2048
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
   interactionText: {fileID: 281929263}
   sleepUI: {fileID: 347960127}
+  StoneUI: {fileID: 0}
 --- !u!114 &1675297126
 MonoBehaviour:
   m_ObjectHideFlags: 0
