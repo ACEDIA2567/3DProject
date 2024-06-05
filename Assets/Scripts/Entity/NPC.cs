@@ -216,6 +216,11 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     void Die()
     {
+
+        ItemData[] instantiate = new ItemData[1];
+        
+
+
         Destroy(this);
 
     }
