@@ -9,14 +9,6 @@ public enum AIState
     Wandering,
     Attacking
 }
-public interface IDamagalbe
-{
-    void TakePhysicalDamage(int damage);
-}
-
-
-
-
 
 public class NPC : MonoBehaviour, IDamagalbe
 {
@@ -48,9 +40,7 @@ public class NPC : MonoBehaviour, IDamagalbe
     public float fieldOfView = 120f;
 
 
-    private List<IDamagalbe> things = new List<IDamagalbe>();
-
-
+   
     private Animator animator;
     private SkinnedMeshRenderer[] meshRenderers;
 
@@ -75,8 +65,6 @@ public class NPC : MonoBehaviour, IDamagalbe
         switch (aiState)
         {
             case AIState.Idle:
-                PassiveUpdate();
-                break;
             case AIState.Wandering:
                 PassiveUpdate();
                 break;
@@ -164,13 +152,13 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     void AttackingUpdate()
     {
-        if (playerDistance < attackDistance || !IsPlayerInFieldOfView())
+        if (playerDistance < attackDistance && IsPlayerInFieldOfView())
         {
             agent.isStopped = true;
             if (Time.time - lastAttackTime > attackRate)
             {
                 lastAttackTime = Time.time;
-                TakePhysicalDamage (damage);
+                GameManager.Instance.Player.condition.GetComponent<IDamagalbe>(). TakePhysicalDamage (damage); 
                 animator.speed = 1;
                 animator.SetTrigger("Attack");
             }
@@ -211,39 +199,12 @@ public class NPC : MonoBehaviour, IDamagalbe
         return angle < fieldOfView * 0.5f;
     }
 
-    void DealDamage()
-    {
-        for (int i = 0; i < things.Count; i++)
-        {
-            things[i].TakePhysicalDamage(damage);
-        }
+   
 
-    }
-
-
-        private void OnTriggerEnter(Collider other)
-    {
-        if (other.TryGetComponent(out IDamagalbe damagalbe))
-        {
-            things.Add(damagalbe);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.TryGetComponent(out IDamagalbe damagable))
-        {
-            things.Remove(damagable);
-        }
-    }
-
+  
     public void TakePhysicalDamage(int damage)
     {
-        health-=damage;
-        if (health <= 0)
-        {
-            Die();
-        }
+      
 
 
     }
