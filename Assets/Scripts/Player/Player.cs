@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public float dataDelayTime = 0;
     public Action AddItem;
 
-    public UICursor ItemInfoObject;
+    public UICursor cursor;
     public UIInventory inventory;
 
     private void Awake()
@@ -24,6 +24,19 @@ public class Player : MonoBehaviour
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerCondition>();
         creaft = GetComponent<PlayerCraft>();
+    }
+
+    public void CursorSet()
+    {
+        if(Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
     }
 
     public void StartCo(IEnumerator coroutine)

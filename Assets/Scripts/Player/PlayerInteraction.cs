@@ -9,12 +9,15 @@ public class PlayerInteraction : MonoBehaviour
     public float rayDistance;
     public LayerMask interactionLayer;
     public LayerMask tentLayer;
+    public LayerMask waterLayer;
     public TextMeshProUGUI interactionText;
     public GameObject sleepUI;
+    public GameObject StoneUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
+    private bool waterCheck = false;
     private bool sleepCheck = false;
-    private Camera camera;
+    new private Camera camera;
 
     private IItemInfo itemInfo;
     private GameObject interactionObject;
@@ -55,6 +58,13 @@ public class PlayerInteraction : MonoBehaviour
             itemInfo = hit.collider.GetComponent<IItemInfo>();
             VoidText();
         }
+        else if (Physics.Raycast(ray, out hit, rayDistance, waterLayer))
+        {
+            if (waterCheck)
+            {
+                GameManager.Instance.Player.condition.Drink(10);
+            }
+        }
         else
         {
             sleepCheck = false;
@@ -82,12 +92,20 @@ public class PlayerInteraction : MonoBehaviour
                 interactionText.gameObject.SetActive(false);
             }
         }
-        else if (context.phase == InputActionPhase.Started && sleepCheck)
+        else if (context.phase == InputActionPhase.Started)
         {
-            Cursor.lockState = CursorLockMode.None;
-            sleepUI.SetActive(true);
-            sleepCheck = false;
-            itemInfo = null;
+            waterCheck = true;
+
+            if (sleepCheck)
+            {
+                sleepUI.SetActive(true);
+                sleepCheck = false;
+                itemInfo = null;
+            }
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            waterCheck = false;
         }
     }
 }

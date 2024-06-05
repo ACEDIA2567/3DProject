@@ -10,6 +10,7 @@ public class DayNightCycle : MonoBehaviour
     public float startTime = 0.4f;
     private float timeRate;
     public Vector3 noon; // Vector2 90 0 0
+    private int endingDay = -1;
 
     [Header("Sun")]
     public Light sun;
@@ -24,6 +25,11 @@ public class DayNightCycle : MonoBehaviour
     [Header("Other Lighting")]
     public AnimationCurve lightIntensityMultiplier;
     public AnimationCurve reflectionIntensityMultiplier;
+
+    private void Awake()
+    {
+        GameManager.Instance.dayNightCycle = this;
+    }
 
     void Start()
     {
@@ -40,6 +46,11 @@ public class DayNightCycle : MonoBehaviour
 
         RenderSettings.ambientIntensity = lightIntensityMultiplier.Evaluate(time);
         RenderSettings.reflectionIntensity = reflectionIntensityMultiplier.Evaluate(time);
+    }
+
+    public void EndingStart()
+    {
+        endingDay = 0;
     }
 
     public void ChangeMorning()
@@ -63,6 +74,16 @@ public class DayNightCycle : MonoBehaviour
         else if (lightSource.intensity > 0 && !go.activeInHierarchy)
         {
             go.SetActive(true);
+            if (lightSource == sun && endingDay != -1)
+            {
+                endingDay++;
+                Debug.Log("아침입니다!");
+                Debug.Log($"엔딩까지 남은 일 수 {2 - endingDay}");
+                if (endingDay >= 2)
+                {
+                    Debug.Log("헬리콥터 등장");
+                }
+            }
         }
     }
 }
