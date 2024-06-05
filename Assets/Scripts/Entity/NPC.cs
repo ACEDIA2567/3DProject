@@ -216,13 +216,11 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     void Die()
     {
-
-      
-        
-
-
-        Destroy(this);
-
+        foreach (ItemData data in dropOnDeath)
+        {
+            Instantiate(data.dropPrefab, transform.position + Vector3.up, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 
 }
