@@ -26,6 +26,19 @@ public class Player : MonoBehaviour
         creaft = GetComponent<PlayerCraft>();
     }
 
+    public void CursorSet()
+    {
+        if(Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+    }
+
     public void StartCo(IEnumerator coroutine)
     {
         StartCoroutine(coroutine);
