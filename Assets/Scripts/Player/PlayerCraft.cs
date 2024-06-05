@@ -11,6 +11,7 @@ public class PlayerCraft : MonoBehaviour
 
     RaycastHit hitInfo;
     public LayerMask layerMask;
+    public int slotIndex;
     bool creaftMode = false;
     Camera camera;
 
@@ -20,11 +21,12 @@ public class PlayerCraft : MonoBehaviour
         camera = Camera.main;
     }
 
-    public void GetData(ItemData data)
+    public void GetData(ItemData data, int index)
     {
         // 크래프트 모드일 경우 데이터 받지 못하게 함
         if (this.data != null) return;
         PreviwerObject = Instantiate(data.ViewObject);
+        slotIndex = index;
         this.data = data;
     }
 
@@ -47,9 +49,19 @@ public class PlayerCraft : MonoBehaviour
                 {
                     Instantiate(data.dropPrefab, hitInfo.point, Quaternion.identity);
                     data = null;
-                    PreviwerObject = null;
+                    Destroy(PreviwerObject);
+                    // 인벤토리의 아이템 삭제
+                    GameManager.Instance.Player.inventory.GetSlot(slotIndex).Clear();
+                    slotIndex = -1;
                 }
             }
+        }
+        // ESC 누르면 건축 취소
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            data = null;
+            Destroy(PreviwerObject);
+            slotIndex = -1;
         }
     }
 

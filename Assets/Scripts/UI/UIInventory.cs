@@ -23,6 +23,11 @@ public class UIInventory : MonoBehaviour
         GameManager.Instance.Player.inventory = this;
     }
 
+    public Slot GetSlot(int index)
+    {
+        return slots[index];
+    }
+
     void Add()
     {
         ItemData itemData = GameManager.Instance.Player.currentData;

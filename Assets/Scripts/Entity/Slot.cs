@@ -84,7 +84,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
         else if(data.type == ItemType.Build)
         {
-            GameManager.Instance.Player.creaft.GetData(data);
+            GameManager.Instance.Player.creaft.GetData(data, index);
         }
     }
 
