@@ -24,7 +24,11 @@ public class GameManager : MonoBehaviour
         set { player = value; }
     }
 
-    public GameObject sleepUI;
+    // 게임 클리어 확인
+    public bool fireCheck = false;
+    public bool stoneSOS = false;
+    public GameObject helicopter;
+    public DayNightCycle dayNightCycle;
 
     private void Awake()
     {
@@ -32,15 +36,12 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void CursorActive()
+    public void EndingCheck()
     {
-        if (Cursor.lockState == CursorLockMode.None)
+        // 모닥불과 SOS돌을 모두 설치 했다면
+        if(fireCheck && stoneSOS)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else if(Cursor.lockState == CursorLockMode.Locked)
-        {
-            Cursor.lockState = CursorLockMode.None;
+            dayNightCycle.EndingStart();
         }
     }
 }
