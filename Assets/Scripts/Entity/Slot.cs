@@ -19,7 +19,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
 
     PlayerCondition condition;
     PlayerController controller;
-    internal bool equipped;
 
     private void Start()
     {
@@ -82,6 +81,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         else if (data.type == ItemType.Equipment)
         {
             Debug.Log("장비 아직 미정");
+        }
+        else if(data.type == ItemType.Build)
+        {
+            GameManager.Instance.Player.creaft.GetData(data, index);
         }
     }
 
@@ -155,7 +158,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
         else if(eventData.button == PointerEventData.InputButton.Middle)
         {
-            UICursor uiCursor = GameManager.Instance.Player.ItemInfoObject;
+            UICursor uiCursor = GameManager.Instance.Player.cursor;
             uiCursor.transform.position = eventData.position;
             uiCursor.UIUpdate(data);
         }
