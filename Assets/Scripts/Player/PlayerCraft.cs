@@ -13,7 +13,7 @@ public class PlayerCraft : MonoBehaviour
     public LayerMask layerMask;
     public int slotIndex;
     bool creaftMode = false;
-    Camera camera;
+    new Camera camera;
 
     private void Start()
     {
