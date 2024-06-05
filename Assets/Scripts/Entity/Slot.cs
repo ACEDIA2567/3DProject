@@ -158,7 +158,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
         else if(eventData.button == PointerEventData.InputButton.Middle)
         {
-            UICursor uiCursor = GameManager.Instance.Player.ItemInfoObject;
+            UICursor uiCursor = GameManager.Instance.Player.cursor;
             uiCursor.transform.position = eventData.position;
             uiCursor.UIUpdate(data);
         }

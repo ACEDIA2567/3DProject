@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b715df532db482a459dcc24fb5f637e7, type: 2}
 --- !u!1 &4697919
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,6 +7415,9 @@ MonoBehaviour:
   itemName: {fileID: 213487365}
   itemType: {fileID: 2140944168}
   itemDec: {fileID: 1677284575}
+  invenCursor: 0
+  craftCursor: 0
+  sleepCursor: 0
 --- !u!1 &1362864068
 GameObject:
   m_ObjectHideFlags: 0
@@ -9432,7 +9435,7 @@ MonoBehaviour:
   currentData: {fileID: 0}
   dataQuantity: 0
   dataDelayTime: 0
-  ItemInfoObject: {fileID: 0}
+  cursor: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &1675297128
 MonoBehaviour:

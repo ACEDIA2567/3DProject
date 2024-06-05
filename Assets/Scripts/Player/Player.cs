@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public float dataDelayTime = 0;
     public Action AddItem;
 
-    public UICursor ItemInfoObject;
+    public UICursor cursor;
     public UIInventory inventory;
 
     private void Awake()

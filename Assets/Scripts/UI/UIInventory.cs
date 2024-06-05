@@ -124,13 +124,15 @@ public class UIInventory : MonoBehaviour
         {
             if (inventoryObject.activeInHierarchy)
             {
-                Cursor.lockState = CursorLockMode.Locked;
+                GameManager.Instance.Player.cursor.invenCursor = true;
+                GameManager.Instance.Player.cursor.CursorCheck();
                 inventoryObject.SetActive(false);
-                GameManager.Instance.Player.ItemInfoObject.gameObject.SetActive(false);
+                GameManager.Instance.Player.cursor.gameObject.SetActive(false);
             }
             else
             {
-                Cursor.lockState = CursorLockMode.None;
+                GameManager.Instance.Player.cursor.invenCursor = false;
+                GameManager.Instance.Player.cursor.CursorCheck();
                 inventoryObject.SetActive(true);
             }
         }

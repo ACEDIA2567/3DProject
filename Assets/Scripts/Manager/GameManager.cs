@@ -31,16 +31,4 @@ public class GameManager : MonoBehaviour
         if (instance != null) return;
         instance = this;
     }
-
-    public void CursorActive()
-    {
-        if (Cursor.lockState == CursorLockMode.None)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else if(Cursor.lockState == CursorLockMode.Locked)
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
 }
