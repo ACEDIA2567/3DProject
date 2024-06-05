@@ -18,6 +18,11 @@ public class EquipTool : Equip
     private Animator animator;
     private Camera camera;
 
+    public EquipTool(Camera camera)
+    {
+        this.camera = camera;
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -51,9 +56,9 @@ public class EquipTool : Equip
                 resource.Gather(hit.point, hit.normal);
             }
 
-            if (doesDealDamage && hit.collider.TryGetComponent(out IDamagable damagable))
+            //if (doesDealDamage && hit.collider.TryGetComponent(out IDamagable damagable))
             {
-                damagable.TakePhysicalDamage(damage);
+                //damagable.TakePhysicalDamage(damage);
             }
         }
     }
