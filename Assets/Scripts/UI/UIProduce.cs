@@ -11,7 +11,7 @@ public class UIProduce : MonoBehaviour
 
     void Start()
     {
-
+        ProduceObject.SetActive(false);
     }
 
     // 力累过 UI 厚/劝己拳 贸府

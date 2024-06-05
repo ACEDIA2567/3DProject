@@ -2118,7 +2118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &347960128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5331,7 +5331,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2132010175}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: CursorActive
         m_Mode: 1
@@ -9286,7 +9286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33922edae7f00804e975ef88aed5ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 3
+  rayDistance: 10
   interactionLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -9294,6 +9294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   interactionText: {fileID: 281929263}
+  sleepUI: {fileID: 347960127}
 --- !u!114 &1675297126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9307,7 +9308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conditions: {fileID: 0}
-  noEpHealthDecay: 0
+  HealthDecay: 0
 --- !u!114 &1675297127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9751,7 +9752,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2132010175}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: CursorActive
         m_Mode: 1
@@ -11457,51 +11458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130880499}
   m_CullTransparentMesh: 1
---- !u!1 &2132010174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2132010176}
-  - component: {fileID: 2132010175}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2132010175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132010174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97b73a9854feae541ba8806e2108f6dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sleepUI: {fileID: 347960127}
---- !u!4 &2132010176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132010174}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140944166
 GameObject:
   m_ObjectHideFlags: 0
@@ -13622,4 +13578,3 @@ SceneRoots:
   - {fileID: 52880713}
   - {fileID: 608714767}
   - {fileID: 930412811439786700}
-  - {fileID: 2132010176}

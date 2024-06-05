@@ -10,6 +10,7 @@ public class PlayerInteraction : MonoBehaviour
     public LayerMask interactionLayer;
     public LayerMask tentLayer;
     public TextMeshProUGUI interactionText;
+    public GameObject sleepUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
     private bool sleepCheck = false;
@@ -84,7 +85,7 @@ public class PlayerInteraction : MonoBehaviour
         else if (context.phase == InputActionPhase.Started && sleepCheck)
         {
             Cursor.lockState = CursorLockMode.None;
-            GameManager.Instance.sleepUI.SetActive(true);
+            sleepUI.SetActive(true);
             sleepCheck = false;
             itemInfo = null;
         }
