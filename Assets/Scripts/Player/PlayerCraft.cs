@@ -45,7 +45,7 @@ public class PlayerCraft : MonoBehaviour
             if (hitInfo.transform != null)
             {
                 PreviwerObject.transform.position = hitInfo.point;
-                if (creaftMode)
+                if (creaftMode && PreviwerObject.GetComponent<MeshRenderer>().material.color == Color.green)
                 {
                     Instantiate(data.dropPrefab, hitInfo.point, Quaternion.identity);
                     data = null;
