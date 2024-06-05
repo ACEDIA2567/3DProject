@@ -25,12 +25,10 @@ public class UICursor : MonoBehaviour
     {
         if (invenCursor && craftCursor)
         {
-            Debug.Log("커서 안 보이게");
             Cursor.lockState = CursorLockMode.Locked;
         }
         else
         {
-            Debug.Log("커서 보이게");
             Cursor.lockState = CursorLockMode.None;
         }
     }
