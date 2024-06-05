@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
     [Header("Move")]
@@ -22,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public float jumpPower;
     public float jumpSp;
     private float addJump;
-    private int jumpCount = 1;
+    private int jumpCount;
 
     // Component
     Rigidbody rigidbody;
@@ -30,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     // Ladder Á¤º¸
     private int ladderLayerMask;
-    private Vector3 ladderRayHight = new Vector3(0, -0.7f, 0);
+    private Vector3 ladderRayHight;
     private Ray rays;
 
     [Header("Camera")]
@@ -47,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        ladderRayHight = new Vector3(0, -0.7f, 0);
+        jumpCount = 1;
         Cursor.lockState = CursorLockMode.Locked;
         ladderLayerMask = LayerMask.GetMask("Ladder");
     }

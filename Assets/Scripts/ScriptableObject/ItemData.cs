@@ -20,6 +20,8 @@ public enum ConsumableType
 {
     Hp,
     Sp,
+    Ep,
+    Wp,
     SpeedUp,
     JumpUp
 }
@@ -28,7 +30,8 @@ public enum ItemType
 {
     Consumable,
     Resource,
-    Equipment
+    Equipment,
+    Build
 }
 
 [Serializable]
@@ -53,4 +56,6 @@ public class ItemData : ScriptableObject
 
     public ConsumableData[] consumableData;
     public float delayTime;
+
+    public GameObject ViewObject;
 }
