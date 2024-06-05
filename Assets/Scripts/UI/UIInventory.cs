@@ -146,7 +146,7 @@ public class UIInventory : MonoBehaviour
         GameManager.Instance.Player.equip.EquopNew(selectedItem);
         UpdateUI();
 
-        SelectItem(selecetedItemIndex);
+        //SelectItem(selecetedItemIndex);
     }
 
     void UnEquip(int index)
@@ -157,7 +157,7 @@ public class UIInventory : MonoBehaviour
 
         if(selectedItemIndex == index)
         {
-            SelectItem(selectedItemIndex);
+            //SelectItem(selectedItemIndex);
         }
     }
 
