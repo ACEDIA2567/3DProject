@@ -204,15 +204,19 @@ public class NPC : MonoBehaviour, IDamagalbe
   
     public void TakePhysicalDamage(int damage)
     {
-      
 
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
 
     }
 
 
     void Die()
     {
-
+        Destroy(this);
 
     }
 
