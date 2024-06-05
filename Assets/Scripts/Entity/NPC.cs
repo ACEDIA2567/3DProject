@@ -9,14 +9,6 @@ public enum AIState
     Wandering,
     Attacking
 }
-public interface IDamagalbe
-{
-    void TakePhysicalDamage(int damage);
-}
-
-
-
-
 
 public class NPC : MonoBehaviour, IDamagalbe
 {
@@ -164,13 +156,13 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     void AttackingUpdate()
     {
-        if (playerDistance < attackDistance || !IsPlayerInFieldOfView())
+        if (playerDistance < attackDistance || IsPlayerInFieldOfView())
         {
             agent.isStopped = true;
             if (Time.time - lastAttackTime > attackRate)
             {
                 lastAttackTime = Time.time;
-                TakePhysicalDamage (damage);
+                GameManager.Instance.Player.condition.GetComponent<IDamagalbe>(). TakePhysicalDamage (damage); 
                 animator.speed = 1;
                 animator.SetTrigger("Attack");
             }
@@ -239,11 +231,7 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     public void TakePhysicalDamage(int damage)
     {
-        health-=damage;
-        if (health <= 0)
-        {
-            Die();
-        }
+      
 
 
     }

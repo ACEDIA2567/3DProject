@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerCondition : MonoBehaviour
+public interface IDamagalbe
+{
+    void TakePhysicalDamage(int damage);
+}
+public class PlayerCondition : MonoBehaviour,IDamagalbe
 {
     public UICondition conditions;
 
@@ -57,5 +61,20 @@ public class PlayerCondition : MonoBehaviour
     public void Drink(float value)
     {
         wp.Up(value);
+    }
+    public void TakePhysicalDamage(int value)
+    {
+
+        hp.Down(value);
+       
+        if (hp.currentValue <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+
+
     }
 }
