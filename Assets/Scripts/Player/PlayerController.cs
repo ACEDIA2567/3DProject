@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private int jumpCount;
 
     // Component
-    Rigidbody rigidbody;
+    new Rigidbody rigidbody;
     PlayerCondition condition;
 
     // Ladder Á¤º¸

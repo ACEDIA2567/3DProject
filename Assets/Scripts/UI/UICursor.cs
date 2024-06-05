@@ -9,12 +9,28 @@ public class UICursor : MonoBehaviour
     public TextMeshProUGUI itemType;
     public TextMeshProUGUI itemDec;
 
+    public bool invenCursor = false;
+    public bool craftCursor = false;
+    public bool sleepCursor = false;
+
     ItemData data;
 
     void Start()
     {
-        GameManager.Instance.Player.ItemInfoObject = this;
+        GameManager.Instance.Player.cursor = this;
         gameObject.SetActive(false);
+    }
+
+    public void CursorCheck()
+    {
+        if (invenCursor && craftCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void UIUpdate(ItemData data)
