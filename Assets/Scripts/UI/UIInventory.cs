@@ -9,6 +9,8 @@ public class UIInventory : MonoBehaviour
     public GameObject inventoryObject;
     private Slot[] slots;
 
+    int curEquipIndex;
+
     private void Start()
     {
         GameManager.Instance.Player.AddItem += Add;
