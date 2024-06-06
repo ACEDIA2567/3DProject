@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6203318193710523409}
   - component: {fileID: 5919819590998709847}
-  m_Layer: 11
+  - component: {fileID: -5166151676727363661}
+  m_Layer: 12
   m_Name: Equip_Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,6 +51,27 @@ MonoBehaviour:
   doesGatherResources: 0
   doesDealDamage: 1
   damage: 10
+--- !u!95 &-5166151676727363661
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5939683260653398080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e5ae0ca99d2fc047a8edf91a7295659, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &5986365290996015523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 284123833331198316, guid: c6f84034421108c43ab0a8168169c598, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 706451209159784630, guid: c6f84034421108c43ab0a8168169c598, type: 3}
       propertyPath: m_LocalScale.x
@@ -120,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1740338538145506361, guid: c6f84034421108c43ab0a8168169c598, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

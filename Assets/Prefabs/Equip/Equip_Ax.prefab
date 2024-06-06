@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1809914333717229560}
   - component: {fileID: 3413594705080132723}
   - component: {fileID: 3663829486797407629}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Ax Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 811600455690779935}
   - component: {fileID: 5170641389509826361}
   - component: {fileID: 4822228056765789465}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Equip_Ax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
