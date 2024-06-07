@@ -81,7 +81,7 @@ public class DayNightCycle : MonoBehaviour
                 Debug.Log($"엔딩까지 남은 일 수 {2 - endingDay}");
                 if (endingDay >= 2)
                 {
-                    Debug.Log("헬리콥터 등장");
+                    GameManager.Instance.SpawnHelicopter();
                 }
             }
         }
