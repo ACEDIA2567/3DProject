@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -27,9 +28,8 @@ public class GameManager : MonoBehaviour
     // 게임 클리어 확인
     public bool fireCheck = false;
     public bool stoneSOS = false;
-    public GameObject helicopter;
     public DayNightCycle dayNightCycle;
-    public Transform[] helicopterSpawnPos;
+    public SpawnManger spawnManger;
 
     private void Awake()
     {
@@ -44,11 +44,5 @@ public class GameManager : MonoBehaviour
         { 
             dayNightCycle.EndingStart();
         }
-    }
-
-    public void SpawnHelicopter()
-    {
-        Transform transform = helicopterSpawnPos[Random.Range(0, helicopterSpawnPos.Length)];
-        Instantiate(helicopter, transform.position, Quaternion.identity);
     }
 }
