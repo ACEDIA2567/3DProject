@@ -16,6 +16,7 @@ public class DayNightCycle : MonoBehaviour
     public Light sun;
     public Gradient sunColor;
     public AnimationCurve sunIntensity;
+    
 
     [Header("Moon")]
     public Light moon;
@@ -77,7 +78,12 @@ public class DayNightCycle : MonoBehaviour
             if (lightSource == sun)
             {
                 // 아침이 되므로 곰을 스폰한다.
-                GameManager.Instance.spawnManger.SpawnBear();
+                for (int i = 0; i < GameManager.Instance.spawnManger.bearCount; i++)
+                {
+                    GameManager.Instance.spawnManger.SpawnBear();
+                }
+                GameManager.Instance.spawnManger.bearCount++;
+            }
 
                 if (endingDay != -1)
                 {
@@ -91,4 +97,4 @@ public class DayNightCycle : MonoBehaviour
             }
         }
     }
-}
+
