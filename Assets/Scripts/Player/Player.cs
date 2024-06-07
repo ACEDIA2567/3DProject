@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public PlayerController controller;
     public PlayerCondition condition;
     public PlayerCraft creaft;
+    public Equipment euipment;
 
     public ItemData currentData;
     public int dataQuantity = 0;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerCondition>();
         creaft = GetComponent<PlayerCraft>();
+        euipment = GetComponent<Equipment>();
     }
 
     public void CursorSet()
