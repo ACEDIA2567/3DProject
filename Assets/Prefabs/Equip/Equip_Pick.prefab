@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4130490200625052421}
   - component: {fileID: 6497747827156880333}
-  - component: {fileID: 4817235569079635418}
+  - component: {fileID: -8595363121742119238}
   m_Layer: 12
   m_Name: Equip_Pick
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MonoBehaviour:
   doesGatherResources: 1
   doesDealDamage: 0
   damage: 4
---- !u!95 &4817235569079635418
+--- !u!95 &-8595363121742119238
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ Animator:
   m_GameObject: {fileID: 2098632986749434668}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b81fdde082a6eb74297867f53dabde3a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 230052f7af071f64fb15c0da6115bcc8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

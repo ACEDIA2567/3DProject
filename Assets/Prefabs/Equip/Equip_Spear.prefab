@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6203318193710523409}
   - component: {fileID: 5919819590998709847}
-  - component: {fileID: -5166151676727363661}
+  - component: {fileID: -7577513788135426701}
   m_Layer: 12
   m_Name: Equip_Spear
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MonoBehaviour:
   doesGatherResources: 0
   doesDealDamage: 1
   damage: 10
---- !u!95 &-5166151676727363661
+--- !u!95 &-7577513788135426701
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ Animator:
   m_GameObject: {fileID: 5939683260653398080}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3e5ae0ca99d2fc047a8edf91a7295659, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e701622c39a0ba4684c9000dec1217f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
