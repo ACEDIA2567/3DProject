@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Gather
+{
+    Wood,
+    Stone
+}
+
 public class EquipTool : Equip
 {
     public float attackRate;
@@ -10,6 +16,7 @@ public class EquipTool : Equip
 
     [Header("Resource Gathering")]
     public bool doesGatherResources;
+    public Gather type;
 
     [Header("cambat")]
     public bool doesDealDamage;
@@ -53,7 +60,7 @@ public class EquipTool : Equip
         {
             if (doesGatherResources && hit.collider.TryGetComponent(out Resource resource))
             {
-                resource.Gather(hit.point, hit.normal);
+                resource.Gather(hit.point, hit.normal, type);
             }
 
             if (doesDealDamage && hit.collider.TryGetComponent(out IDamagalbe damagable))
