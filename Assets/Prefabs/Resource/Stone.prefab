@@ -122,3 +122,4 @@ MonoBehaviour:
   itemToGive: {fileID: 11400000, guid: 710465271251e504db1095e0433d3c33, type: 2}
   quantityPerHit: 1
   capacy: 5
+  type: 1

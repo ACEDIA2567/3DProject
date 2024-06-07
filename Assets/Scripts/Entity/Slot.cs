@@ -167,35 +167,42 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
     // 드래그 시작
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("드래그 시작");
         // 아이템 정보 플레이어한테 전달
         GameManager.Instance.Player.currentData = this.data;
         GameManager.Instance.Player.dataQuantity = slotQuantity;
         GameManager.Instance.Player.dataDelayTime = delayTime;
+
+        GameManager.Instance.Player.cursor.itemDrag.SetActive(true);
+        GameManager.Instance.Player.cursor.itemDrag.GetComponent<Image>().sprite = data.icon;
+        Clear();
     }
 
     // 드래그 끝났을 때
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("드래그 끝");
+        if (data != null)
+        {
+            return;
+        }
+
         data = GameManager.Instance.Player.currentData;
         slotQuantity = GameManager.Instance.Player.dataQuantity;
         delayTime = GameManager.Instance.Player.dataDelayTime;
         DelayCheck();
         Set();
+        GameManager.Instance.Player.cursor.itemDrag.SetActive(false);
     }
 
     // 드래그 중
     public void OnDrag(PointerEventData eventData)
     {
         // 해당 아이템 아이콘의 위치를 마우스 위치와 동일하게
-
+        GameManager.Instance.Player.cursor.itemDrag.transform.position = eventData.position;
     }
 
     // 이동할 슬롯의 정보
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("아이템 드랍");
         // 플레이어의 currentData가 있는지 확인
         if (GameManager.Instance.Player.currentData == null) return;
 
@@ -213,6 +220,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         // 드롭한 장소에 데이터가 없다면
         else if (data == null)
         {
+            Debug.Log(GameManager.Instance.Player.currentData.itemName);
             data = GameManager.Instance.Player.currentData;
             slotQuantity = GameManager.Instance.Player.dataQuantity;
             delayTime = GameManager.Instance.Player.dataDelayTime;
@@ -233,6 +241,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
             GameManager.Instance.Player.dataDelayTime = cloneDelayTime;
         }
 
+        GameManager.Instance.Player.cursor.itemDrag.SetActive(false);
         DelayCheck();
         Set();
     }

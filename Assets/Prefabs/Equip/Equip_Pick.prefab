@@ -153,5 +153,6 @@ MonoBehaviour:
   attackRate: 0.8
   attackDistance: 1
   doesGatherResources: 1
+  type: 1
   doesDealDamage: 0
   damage: 0

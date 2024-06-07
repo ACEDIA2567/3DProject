@@ -13,6 +13,8 @@ public class UICursor : MonoBehaviour
     public bool craftCursor = false;
     public bool sleepCursor = false;
 
+    public GameObject itemDrag;
+
     ItemData data;
 
     void Start()
