@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public bool stoneSOS = false;
     public GameObject helicopter;
     public DayNightCycle dayNightCycle;
+
+
     public GameObject gameOverPanel;
     public GameObject gameClearPanel;
 
