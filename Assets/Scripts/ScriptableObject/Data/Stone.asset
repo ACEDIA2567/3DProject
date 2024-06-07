@@ -17,7 +17,9 @@ MonoBehaviour:
     \uB3CC\uC774\uB2E4."
   type: 1
   icon: {fileID: 21300000, guid: 583675a75bcb2a941ac555b9ccd513a9, type: 3}
+  dropPrefab: {fileID: 4890318530135308132, guid: 855a5322d02cdc446aec248d8daf84fe, type: 3}
   maxCount: 9
   count: 1
   consumableData: []
   delayTime: 0
+  ViewObject: {fileID: 0}

@@ -80,7 +80,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
         else if (data.type == ItemType.Equipment)
         {
-            Debug.Log("장비 아직 미정");
+            GameManager.Instance.Player.euipment.EquipNew(data);
         }
         else if(data.type == ItemType.Build)
         {

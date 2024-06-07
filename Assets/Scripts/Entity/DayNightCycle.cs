@@ -74,14 +74,19 @@ public class DayNightCycle : MonoBehaviour
         else if (lightSource.intensity > 0 && !go.activeInHierarchy)
         {
             go.SetActive(true);
-            if (lightSource == sun && endingDay != -1)
+            if (lightSource == sun)
             {
-                endingDay++;
-                Debug.Log("아침입니다!");
+                // 아침이 되므로 곰을 스폰한다.
+                GameManager.Instance.spawnManger.SpawnBear();
+
+                if (endingDay != -1)
+                {
+                    endingDay++;
+                }
                 Debug.Log($"엔딩까지 남은 일 수 {2 - endingDay}");
                 if (endingDay >= 2)
                 {
-                    Debug.Log("헬리콥터 등장");
+                    GameManager.Instance.spawnManger.SpawnHelicopter();
                 }
             }
         }
