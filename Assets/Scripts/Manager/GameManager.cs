@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     public DayNightCycle dayNightCycle;
     public SpawnManger spawnManger;
 
+
+    public GameObject gameOverPanel;
+    public GameObject gameClearPanel;
+
     private void Awake()
     {
         if (instance != null) return;
