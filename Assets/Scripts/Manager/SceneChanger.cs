@@ -9,4 +9,14 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void LoadIntroScene()
+    {
+        SceneManager.LoadScene("IntroScene");
+    }
+
+    public void GameExit()
+    {
+        Application.Quit();
+    }
 }
