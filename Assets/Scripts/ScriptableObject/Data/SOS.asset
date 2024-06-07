@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b403780a280f1644cb5e6206c49eb135, type: 3}
+  m_Name: SOS
+  m_EditorClassIdentifier: 
+  itemName: ???
+  description: "\uC5EC\uAE30\uC11C \uB3CC\uB85C SOS\uB97C \uC124\uCE58 \uD560 \uC218
+    \uC788\uC744 \uAC83 \uAC19\uB2E4."
+  type: 3
+  icon: {fileID: 0}
+  dropPrefab: {fileID: 0}
+  maxCount: 0
+  count: 0
+  consumableData: []
+  delayTime: 0
+  ViewObject: {fileID: 0}
