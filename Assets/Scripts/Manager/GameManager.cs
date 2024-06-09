@@ -30,10 +30,7 @@ public class GameManager : MonoBehaviour
     public bool stoneSOS = false;
     public DayNightCycle dayNightCycle;
     public SpawnManger spawnManger;
-
-
-    public GameObject gameOverPanel;
-    public GameObject gameClearPanel;
+    public UIManager uiManager;
 
     private void Awake()
     {
