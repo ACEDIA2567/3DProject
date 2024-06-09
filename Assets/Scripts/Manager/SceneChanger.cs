@@ -8,6 +8,7 @@ public class SceneChanger : MonoBehaviour
     public void LoadMainScene()
     {
         SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1.0f;
     }
 
     public void LoadIntroScene()

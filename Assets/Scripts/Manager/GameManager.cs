@@ -29,10 +29,15 @@ public class GameManager : MonoBehaviour
     public bool stoneSOS = false;
     public GameObject helicopter;
     public DayNightCycle dayNightCycle;
+<<<<<<< Updated upstream
+=======
+    public SpawnManger spawnManger;
+    public UIManager uiManager;
+>>>>>>> Stashed changes
 
 
-    public GameObject gameOverPanel;
-    public GameObject gameClearPanel;
+    //public GameObject gameOverPanel;
+    //public GameObject gameClearPanel;
 
     private void Awake()
     {
