@@ -47,6 +47,17 @@ public class PlayerCraft : MonoBehaviour
                 PreviwerObject.transform.position = hitInfo.point;
                 if (creaftMode && PreviwerObject.GetComponent<MeshRenderer>().material.color == Color.green)
                 {
+                    if (data.itemName == "SOSµ¹")
+                    {
+                        GameManager.Instance.stoneSOS = true;
+                        GameManager.Instance.EndingCheck();
+                    }
+                    else if (data.itemName == "¸ð´ÚºÒ")
+                    {
+                        GameManager.Instance.fireCheck = true;
+                        GameManager.Instance.EndingCheck();
+                    }
+
                     Instantiate(data.dropPrefab, hitInfo.point, Quaternion.identity);
                     data = null;
                     Destroy(PreviwerObject);

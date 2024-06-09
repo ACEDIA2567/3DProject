@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Gather
+public enum GatherType
 {
     Wood,
     Stone
@@ -16,7 +16,7 @@ public class EquipTool : Equip
 
     [Header("Resource Gathering")]
     public bool doesGatherResources;
-    public Gather type;
+    public GatherType type;
 
     [Header("cambat")]
     public bool doesDealDamage;

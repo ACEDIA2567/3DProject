@@ -9,9 +9,8 @@ public class UICursor : MonoBehaviour
     public TextMeshProUGUI itemType;
     public TextMeshProUGUI itemDec;
 
-    public bool invenCursor = false;
-    public bool craftCursor = false;
-    public bool sleepCursor = false;
+    public bool invenCursor = true;
+    public bool craftCursor = true;
 
     public GameObject itemDrag;
 

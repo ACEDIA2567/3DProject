@@ -26,10 +26,20 @@ public class PlayerCondition : MonoBehaviour,IDamagalbe
         if(ep.currentValue <= 0f)
         {
             hp.Down(HealthDecay * Time.deltaTime);
+
+            if (hp.currentValue <= 0)
+            {
+                Die();
+            }
         }
         if(wp.currentValue <= 0f)
         {
             hp.Down(HealthDecay * Time.deltaTime);
+
+            if (hp.currentValue <= 0)
+            {
+                Die();
+            }
         }
     }
 
@@ -74,7 +84,6 @@ public class PlayerCondition : MonoBehaviour,IDamagalbe
     }
     void Die()
     {
-
-
+        GameManager.Instance.uiManager.GameOver();
     }
 }

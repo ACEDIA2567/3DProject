@@ -30,10 +30,7 @@ public class GameManager : MonoBehaviour
     public bool stoneSOS = false;
     public DayNightCycle dayNightCycle;
     public SpawnManger spawnManger;
-
-
-    public GameObject gameOverPanel;
-    public GameObject gameClearPanel;
+    public UIManager uiManager;
 
     private void Awake()
     {
@@ -45,7 +42,8 @@ public class GameManager : MonoBehaviour
     {
         // 모닥불과 SOS돌을 모두 설치 했다면
         if(fireCheck && stoneSOS)
-        { 
+        {
+            Debug.Log("엔딩 시작");
             dayNightCycle.EndingStart();
         }
     }
