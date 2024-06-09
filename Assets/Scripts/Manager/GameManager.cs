@@ -42,7 +42,8 @@ public class GameManager : MonoBehaviour
     {
         // 모닥불과 SOS돌을 모두 설치 했다면
         if(fireCheck && stoneSOS)
-        { 
+        {
+            Debug.Log("엔딩 시작");
             dayNightCycle.EndingStart();
         }
     }

@@ -13,7 +13,6 @@ public class PlayerInteraction : MonoBehaviour
     public LayerMask sosLayer;
     public TextMeshProUGUI interactionText;
     public GameObject sleepUI;
-    public GameObject StoneUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
     private bool waterCheck = false;
@@ -67,12 +66,6 @@ public class PlayerInteraction : MonoBehaviour
                 GameManager.Instance.Player.condition.Drink(10);
             }
         }
-        else if (Physics.Raycast(ray, out hit, rayDistance, sosLayer))
-        {
-            sosCheck = true;
-            itemInfo = hit.collider.GetComponent<IItemInfo>();
-            VoidText();
-        }
         else
         {
             sleepCheck = false;
@@ -108,10 +101,6 @@ public class PlayerInteraction : MonoBehaviour
                 sleepUI.SetActive(true);
                 sleepCheck = false;
                 itemInfo = null;
-            }
-            if (sosCheck)
-            {
-                StoneUI.SetActive(true);
             }
         }
         else if (context.phase == InputActionPhase.Canceled)
