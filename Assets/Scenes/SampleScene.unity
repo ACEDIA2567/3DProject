@@ -7965,7 +7965,6 @@ MonoBehaviour:
   itemDec: {fileID: 1677284575}
   invenCursor: 0
   craftCursor: 0
-  sleepCursor: 0
   itemDrag: {fileID: 4873778708106241104}
 --- !u!1 &1366910949
 GameObject:
@@ -13300,7 +13299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4330297822134692293
 MonoBehaviour:
   m_ObjectHideFlags: 0
