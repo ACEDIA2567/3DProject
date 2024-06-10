@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToGive:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 710465271251e504db1095e0433d3c33, type: 2}
   applePrefab: {fileID: 8332841266426510025}
   quantityPerHit: 1
   capacy: 5
