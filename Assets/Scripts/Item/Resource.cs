@@ -6,7 +6,6 @@ using UnityEngine;
 public class Resource : MonoBehaviour
 {
     public ItemData[] itemToGive;
-    public GameObject applePrefab;
     public int quantityPerHit = 1;
     public int capacy;
     public GatherType type;
