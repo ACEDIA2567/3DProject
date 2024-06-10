@@ -8,18 +8,6 @@ public class Equipment : MonoBehaviour
     public Equip curEquip;
     public Transform equipParent;
 
-    private PlayerController controller;
-    private PlayerCondition condition;
-
-    private object curEquipIndex;
-
-
-    void Start()
-    {
-        controller = GetComponent<PlayerController>();
-        condition = GetComponent<PlayerCondition>();
-    }
-
     // ¿Â∫Ò ¿Â¬¯
     public void EquipNew(ItemData data)
     {
