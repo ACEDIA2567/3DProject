@@ -11,6 +11,7 @@ public class UIProduce : MonoBehaviour
 
     void Start()
     {
+        // 제작 UI 비활성화
         ProduceObject.SetActive(false);
     }
 

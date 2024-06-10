@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6018683000327188938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.62948, y: 3.21, z: -39.866566}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120,7 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0da1adbb8a64742a6f37b6b16fe851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToGive: {fileID: 11400000, guid: e8dcdbc5582eb394caa475c69e75f63c, type: 2}
+  itemToGive:
+  - {fileID: 11400000, guid: e8dcdbc5582eb394caa475c69e75f63c, type: 2}
+  - {fileID: 11400000, guid: 20b3f0db91fcaf2498638072f52aea8a, type: 2}
   applePrefab: {fileID: 6703243747908004402, guid: 4081b03037708ba4d9c15fefec9f75bc, type: 3}
   quantityPerHit: 1
   capacy: 5

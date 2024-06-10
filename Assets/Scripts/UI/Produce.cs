@@ -22,11 +22,6 @@ public class Produce : MonoBehaviour
     // 인벤토리 정보
     UIInventory inventory;
 
-    private void Start()
-    {
-        
-    }
-
     // 제작 가능한지 확인
     public void CheckProduce()
     {
@@ -43,7 +38,7 @@ public class Produce : MonoBehaviour
             }
         }
 
-        // 아이템
+        // 아이템의 존재가 없으면 실행 취소
         if (!Check) return;
 
         // 제작에 필요한 아이템을 소모

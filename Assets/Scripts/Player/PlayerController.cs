@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
+    // 커서 모드가 잠김일 때만 시점 이동 가능하게 함
     private void LateUpdate()
     {
         if (Cursor.lockState == CursorLockMode.Locked)
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // 아이템 기능의 어빌리티 상승 아이템 일 시 이동 속도 및 점프 힘 상승
     public IEnumerator AbilityUp(float time, bool movementCheck)
     {
         if (movementCheck)
@@ -88,6 +90,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // 사다리에 있는지에 따른 이동 값 변경
     private void Move()
     {
         Vector3 moveDir;

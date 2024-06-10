@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Helicopter : MonoBehaviour
 {
-    public void OnCollisionEnter(Collision collision)
+    // 충돌 시 게임 클리어 메서드 실행
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.uiManager.GameClear();
         }

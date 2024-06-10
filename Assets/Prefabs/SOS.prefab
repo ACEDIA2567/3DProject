@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1912234474561490565}
   - component: {fileID: 4092893093386699555}
   - component: {fileID: 23045239550681964}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5146775478275512106}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2477063534874448790}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209273076950471305
 GameObject:
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1953630123451398974}
   - component: {fileID: 2552078440334964975}
   - component: {fileID: 1547814385383027233}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3774022927837576989}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,12 +223,12 @@ Transform:
   m_GameObject: {fileID: 214069421315672574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.28663826, y: -0.18148613, z: 0.6366477}
+  m_LocalPosition: {x: 9.353362, y: -0.18148613, z: 0.6366477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6326424525404833873}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &256339472060998884
 GameObject:
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 3651085824298627520}
   - component: {fileID: 8623028854393028955}
   - component: {fileID: 166648438829804260}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 8057617900381727881}
   - component: {fileID: 7969534034536079281}
   - component: {fileID: 2089722446030039283}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 4181580333360243991}
   - component: {fileID: 4321440830787285959}
   - component: {fileID: 2439522477740834613}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3164503066856620158}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6849446810772227271}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763131799342554492
 GameObject:
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 8544296418875650192}
   - component: {fileID: 8439514269754764193}
   - component: {fileID: 6984603230916860444}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 8093102727401603684}
   - component: {fileID: 59790811172204158}
   - component: {fileID: 9201977713666938825}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 473143561146646927}
   - component: {fileID: 429407675430597361}
   - component: {fileID: 8412839882615110370}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 2477063534874448790}
   - component: {fileID: 2870151890579428514}
   - component: {fileID: 3586575746685319534}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3957442824873336598}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +873,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1980600884037206213}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164574274777353037
 GameObject:
@@ -884,7 +884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8710184039114246419}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,12 +900,12 @@ Transform:
   m_GameObject: {fileID: 1164574274777353037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8033619, y: -0.18148613, z: -6.783352}
+  m_LocalPosition: {x: 11.443362, y: -0.18148613, z: -6.783352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9050528613572903653}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328741381102681287
 GameObject:
@@ -916,7 +916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4429082079630034812}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4056127420219578941}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594295993741441582
 GameObject:
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 9197913032483982816}
   - component: {fileID: 3894597888251687104}
   - component: {fileID: 5414850921335682416}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3707481608421027466}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,12 +1047,12 @@ Transform:
   m_GameObject: {fileID: 1770087984811954694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03663826, y: -0.18148613, z: -5.6033525}
+  m_LocalPosition: {x: 9.603362, y: -0.18148613, z: -5.6033525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4181580333360243991}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053556130781882178
 GameObject:
@@ -1063,7 +1063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3768986600072024182}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1084,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7387509151427346720}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132335110229814678
 GameObject:
@@ -1095,7 +1095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3283350652581864644}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1116,7 +1116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2416202621447047572}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2356689276778482575
 GameObject:
@@ -1127,7 +1127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5346569695304093430}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,7 +1148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6715185921391467758}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2491530486156904945
 GameObject:
@@ -1161,7 +1161,7 @@ GameObject:
   - component: {fileID: 425991344176099234}
   - component: {fileID: 7215725951107762737}
   - component: {fileID: 7933527768257594342}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804296034780845804}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1263,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1631312113909279657}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2691407038318819264
 GameObject:
@@ -1274,7 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6603195828146918509}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1295,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3572539879459827156}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2714518646546745384
 GameObject:
@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 6849446810772227271}
   - component: {fileID: 6526078582049344534}
   - component: {fileID: 7244972791590130932}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6193829243972484688}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1410,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 372575936812852303}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2795160173220296168
 GameObject:
@@ -1421,7 +1421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062704369308927490}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,12 +1437,12 @@ Transform:
   m_GameObject: {fileID: 2795160173220296168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.27663803, y: -0.18148613, z: -0.40335274}
+  m_LocalPosition: {x: 9.363362, y: -0.18148613, z: -0.40335274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1639213739362490104}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2884823415746273115
 GameObject:
@@ -1455,7 +1455,7 @@ GameObject:
   - component: {fileID: 1064228238149076304}
   - component: {fileID: 4731971515672112044}
   - component: {fileID: 1703973557869414157}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1536,7 +1536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3429359075750723774}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1552,12 +1552,12 @@ Transform:
   m_GameObject: {fileID: 2950253691695599320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0566382, y: -0.18148613, z: -7.9233522}
+  m_LocalPosition: {x: 8.583363, y: -0.18148613, z: -7.9233522}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3500769028743493274}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3078558977646533819
 GameObject:
@@ -1568,7 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4905914916707283378}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,12 +1584,12 @@ Transform:
   m_GameObject: {fileID: 3078558977646533819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03663826, y: -0.18148613, z: -5.6033525}
+  m_LocalPosition: {x: 9.603362, y: -0.18148613, z: -5.6033525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9197913032483982816}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3292985959343296096
 GameObject:
@@ -1602,7 +1602,7 @@ GameObject:
   - component: {fileID: 8205373056636300213}
   - component: {fileID: 509643430651589107}
   - component: {fileID: 8464459034625790525}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4913604349941028922}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,12 +1699,12 @@ Transform:
   m_GameObject: {fileID: 3484971732146122892}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.97336197, y: -0.18148613, z: -8.513352}
+  m_LocalPosition: {x: 10.613362, y: -0.18148613, z: -8.513352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3651085824298627520}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3541164081183091938
 GameObject:
@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 1011645957268798731}
   - component: {fileID: 8478245790288484491}
   - component: {fileID: 3961237159125223620}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5095413486441518330}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1819,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1064228238149076304}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3671043426773034881
 GameObject:
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 4301933505069452486}
   - component: {fileID: 5945250821870704929}
   - component: {fileID: 3272550696206546131}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1915,7 +1915,7 @@ GameObject:
   - component: {fileID: 3500769028743493274}
   - component: {fileID: 2356665997754007836}
   - component: {fileID: 4289095487471065427}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +1965,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4ac64bed5a4517045a11b1a28028fe0e, type: 3}
+  - {fileID: 2100000, guid: 562c277d66f55e942b5ae5cd26edc114, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1996,7 +1996,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8997222968313047429}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2017,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4002672076928606579}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4130595522932097365
 GameObject:
@@ -2028,7 +2028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 783177149585792020}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2043,13 +2043,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4130595522932097365}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 0, z: -0.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.17999983, y: 0, z: -0.07999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8183586798511693967}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4330571702592952833
 GameObject:
@@ -2060,7 +2060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8678912022668530756}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2076,12 +2076,12 @@ Transform:
   m_GameObject: {fileID: 4330571702592952833}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9466381, y: -0.18148613, z: -0.9333525}
+  m_LocalPosition: {x: 8.693362, y: -0.18148613, z: -0.9333525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 425991344176099234}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4362888668724192774
 GameObject:
@@ -2092,7 +2092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 541970243315602284}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2108,12 +2108,12 @@ Transform:
   m_GameObject: {fileID: 4362888668724192774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8966384, y: -0.18148613, z: 1.3966475}
+  m_LocalPosition: {x: 8.743362, y: -0.18148613, z: 1.3966475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4226777647232101566}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4367128191882419399
 GameObject:
@@ -2124,7 +2124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6931366199831719698}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2145,7 +2145,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6676875584953793151}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4983571040824471779
 GameObject:
@@ -2156,7 +2156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257844267186685529}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2172,12 +2172,12 @@ Transform:
   m_GameObject: {fileID: 4983571040824471779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9466381, y: -0.18148613, z: -4.9433527}
+  m_LocalPosition: {x: 8.693362, y: -0.18148613, z: -4.9433527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1912234474561490565}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5224527996863206354
 GameObject:
@@ -2188,7 +2188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8323748772059033992}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2209,7 +2209,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 473143561146646927}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5333118131730496615
 GameObject:
@@ -2220,7 +2220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3372113772853224153}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2241,7 +2241,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3184095050367666514}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5335548796637130735
 GameObject:
@@ -2254,7 +2254,7 @@ GameObject:
   - component: {fileID: 3184095050367666514}
   - component: {fileID: 2254232225522015893}
   - component: {fileID: 3317903759140710249}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2337,7 +2337,7 @@ GameObject:
   - component: {fileID: 8183586798511693967}
   - component: {fileID: 8919331244000049841}
   - component: {fileID: 9134185329983896486}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 7273957940665741715}
   - component: {fileID: 6562703064762452119}
   - component: {fileID: 6583661162166297056}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2503,7 +2503,7 @@ GameObject:
   - component: {fileID: 6715185921391467758}
   - component: {fileID: 6955535456914951766}
   - component: {fileID: 3529100071146963532}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,50 +2575,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5579920868321252850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3502466424787694037}
-  m_Layer: 12
-  m_Name: LastS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3502466424787694037
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5579920868321252850}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.64, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 541970243315602284}
-  - {fileID: 3774022927837576989}
-  - {fileID: 6062704369308927490}
-  - {fileID: 8678912022668530756}
-  - {fileID: 257844267186685529}
-  - {fileID: 4905914916707283378}
-  - {fileID: 3707481608421027466}
-  - {fileID: 1433740273487709552}
-  - {fileID: 8710184039114246419}
-  - {fileID: 5467403063404465746}
-  - {fileID: 4913604349941028922}
-  - {fileID: 5974996358652700411}
-  - {fileID: 3429359075750723774}
-  m_Father: {fileID: 36428709261223751}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5622157690255585504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2586,7 @@ GameObject:
   - component: {fileID: 1079662756414904747}
   - component: {fileID: 6982263610355984910}
   - component: {fileID: 6670771849970435231}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1433740273487709552}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2727,12 +2683,12 @@ Transform:
   m_GameObject: {fileID: 5686755858750359427}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.94336176, y: -0.18148613, z: -6.1033525}
+  m_LocalPosition: {x: 10.583363, y: -0.18148613, z: -6.1033525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8102112142652528958}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6125253256932057634
 GameObject:
@@ -2743,7 +2699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4215651523491400639}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2764,7 +2720,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8544296418875650192}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6143671630123798026
 GameObject:
@@ -2775,7 +2731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5467403063404465746}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2791,12 +2747,12 @@ Transform:
   m_GameObject: {fileID: 6143671630123798026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8033619, y: -0.18148613, z: -7.7633524}
+  m_LocalPosition: {x: 11.443362, y: -0.18148613, z: -7.7633524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1079662756414904747}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6482015371525070771
 GameObject:
@@ -2809,7 +2765,7 @@ GameObject:
   - component: {fileID: 4056127420219578941}
   - component: {fileID: 78076895633852179}
   - component: {fileID: 3988201013740499541}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2881,51 +2837,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6688142283957260888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1879310183334354992}
-  m_Layer: 12
-  m_Name: O
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1879310183334354992
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6688142283957260888}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8323748772059033992}
-  - {fileID: 1725562140618396073}
-  - {fileID: 4215651523491400639}
-  - {fileID: 7913279931091530039}
-  - {fileID: 1138478087412673451}
-  - {fileID: 886376074806512061}
-  - {fileID: 6603195828146918509}
-  - {fileID: 4910034820215551948}
-  - {fileID: 3372113772853224153}
-  - {fileID: 3164503066856620158}
-  - {fileID: 5146775478275512106}
-  - {fileID: 3768986600072024182}
-  - {fileID: 6184038577349529014}
-  - {fileID: 5346569695304093430}
-  m_Father: {fileID: 36428709261223751}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6786832081917119396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2937,7 +2848,7 @@ GameObject:
   - component: {fileID: 1980600884037206213}
   - component: {fileID: 364403404323032537}
   - component: {fileID: 5912653441869012630}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3018,7 +2929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886376074806512061}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3039,7 +2950,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8205373056636300213}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6887695523078778912
 GameObject:
@@ -3052,7 +2963,7 @@ GameObject:
   - component: {fileID: 8102112142652528958}
   - component: {fileID: 5639620695064442236}
   - component: {fileID: 1631038849932218866}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3135,7 +3046,7 @@ GameObject:
   - component: {fileID: 4368612263180198663}
   - component: {fileID: 2658526516892215719}
   - component: {fileID: 2748078670085697637}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3218,7 +3129,7 @@ GameObject:
   - component: {fileID: 6818012193235292487}
   - component: {fileID: 101769431025912680}
   - component: {fileID: 934452390220347343}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3299,7 +3210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 231268461231914222}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3320,7 +3231,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4368612263180198663}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7407113652607966292
 GameObject:
@@ -3332,7 +3243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36428709261223751}
   - component: {fileID: 519274131241795280}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3348,13 +3259,50 @@ Transform:
   m_GameObject: {fileID: 7407113652607966292}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.23, y: 1.0234861, z: -8.156648}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1759424032367097984}
-  - {fileID: 1879310183334354992}
-  - {fileID: 3502466424787694037}
+  - {fileID: 6931366199831719698}
+  - {fileID: 6286619716289938233}
+  - {fileID: 1804296034780845804}
+  - {fileID: 5095413486441518330}
+  - {fileID: 3283350652581864644}
+  - {fileID: 6193829243972484688}
+  - {fileID: 4429082079630034812}
+  - {fileID: 231268461231914222}
+  - {fileID: 3957442824873336598}
+  - {fileID: 3051476372994743025}
+  - {fileID: 8997222968313047429}
+  - {fileID: 5999244243930513951}
+  - {fileID: 783177149585792020}
+  - {fileID: 8323748772059033992}
+  - {fileID: 1725562140618396073}
+  - {fileID: 4215651523491400639}
+  - {fileID: 7913279931091530039}
+  - {fileID: 1138478087412673451}
+  - {fileID: 886376074806512061}
+  - {fileID: 6603195828146918509}
+  - {fileID: 4910034820215551948}
+  - {fileID: 3372113772853224153}
+  - {fileID: 3164503066856620158}
+  - {fileID: 5146775478275512106}
+  - {fileID: 3768986600072024182}
+  - {fileID: 6184038577349529014}
+  - {fileID: 5346569695304093430}
+  - {fileID: 541970243315602284}
+  - {fileID: 3774022927837576989}
+  - {fileID: 6062704369308927490}
+  - {fileID: 8678912022668530756}
+  - {fileID: 257844267186685529}
+  - {fileID: 4905914916707283378}
+  - {fileID: 3707481608421027466}
+  - {fileID: 1433740273487709552}
+  - {fileID: 8710184039114246419}
+  - {fileID: 5467403063404465746}
+  - {fileID: 4913604349941028922}
+  - {fileID: 5974996358652700411}
+  - {fileID: 3429359075750723774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519274131241795280
@@ -3379,7 +3327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7913279931091530039}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3400,7 +3348,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1953630123451398974}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7485132838850529559
 GameObject:
@@ -3411,7 +3359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5999244243930513951}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3432,7 +3380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6818012193235292487}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7561304526705631928
 GameObject:
@@ -3443,7 +3391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5974996358652700411}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3459,12 +3407,12 @@ Transform:
   m_GameObject: {fileID: 7561304526705631928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0966382, y: -0.18148613, z: -8.513352}
+  m_LocalPosition: {x: 9.543362, y: -0.18148613, z: -8.513352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8308580266173803442}
-  m_Father: {fileID: 3502466424787694037}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7615818145971419391
 GameObject:
@@ -3477,7 +3425,7 @@ GameObject:
   - component: {fileID: 6676875584953793151}
   - component: {fileID: 7308158819125217707}
   - component: {fileID: 6634515380630729897}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3560,7 +3508,7 @@ GameObject:
   - component: {fileID: 6326424525404833873}
   - component: {fileID: 4473658035470823463}
   - component: {fileID: 7656157444465163832}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3643,7 +3591,7 @@ GameObject:
   - component: {fileID: 3572539879459827156}
   - component: {fileID: 5550831822305948977}
   - component: {fileID: 1174981725673365623}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3726,7 +3674,7 @@ GameObject:
   - component: {fileID: 4002672076928606579}
   - component: {fileID: 290357811890644315}
   - component: {fileID: 7967183432936346694}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3798,50 +3746,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8000504131854641110
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1759424032367097984}
-  m_Layer: 12
-  m_Name: FirstS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1759424032367097984
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8000504131854641110}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 783177149585792020}
-  - {fileID: 5999244243930513951}
-  - {fileID: 8997222968313047429}
-  - {fileID: 3051476372994743025}
-  - {fileID: 3957442824873336598}
-  - {fileID: 231268461231914222}
-  - {fileID: 4429082079630034812}
-  - {fileID: 6193829243972484688}
-  - {fileID: 3283350652581864644}
-  - {fileID: 5095413486441518330}
-  - {fileID: 1804296034780845804}
-  - {fileID: 6286619716289938233}
-  - {fileID: 6931366199831719698}
-  m_Father: {fileID: 36428709261223751}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8002862359795430308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,7 +3755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138478087412673451}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3872,7 +3776,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1011645957268798731}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8155054305440322726
 GameObject:
@@ -3883,7 +3787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6184038577349529014}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3904,7 +3808,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4301933505069452486}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8191766330860601343
 GameObject:
@@ -3917,7 +3821,7 @@ GameObject:
   - component: {fileID: 4226777647232101566}
   - component: {fileID: 2770451335980257657}
   - component: {fileID: 4248329919841366833}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3998,7 +3902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4910034820215551948}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4019,7 +3923,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5574324900701803440}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8241025364385043881
 GameObject:
@@ -4032,7 +3936,7 @@ GameObject:
   - component: {fileID: 8308580266173803442}
   - component: {fileID: 4271467773047348562}
   - component: {fileID: 8161817131719949649}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4115,7 +4019,7 @@ GameObject:
   - component: {fileID: 1639213739362490104}
   - component: {fileID: 2885208787341966904}
   - component: {fileID: 7156106686077943898}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4198,7 +4102,7 @@ GameObject:
   - component: {fileID: 2416202621447047572}
   - component: {fileID: 2022296664358791446}
   - component: {fileID: 7269637817408069813}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4279,7 +4183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3051476372994743025}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4300,7 +4204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8057617900381727881}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8581552541800674658
 GameObject:
@@ -4313,7 +4217,7 @@ GameObject:
   - component: {fileID: 7387509151427346720}
   - component: {fileID: 8105460965180735621}
   - component: {fileID: 7604739617170781491}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4396,7 +4300,7 @@ GameObject:
   - component: {fileID: 1631312113909279657}
   - component: {fileID: 4000284431340531667}
   - component: {fileID: 8689592562156984637}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4479,7 +4383,7 @@ GameObject:
   - component: {fileID: 9050528613572903653}
   - component: {fileID: 711003266485217791}
   - component: {fileID: 2210129204326227799}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4560,7 +4464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725562140618396073}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4581,7 +4485,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8093102727401603684}
-  m_Father: {fileID: 1879310183334354992}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9004579937690849440
 GameObject:
@@ -4594,7 +4498,7 @@ GameObject:
   - component: {fileID: 5574324900701803440}
   - component: {fileID: 6431205489122478537}
   - component: {fileID: 1346258955239760149}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4677,7 +4581,7 @@ GameObject:
   - component: {fileID: 372575936812852303}
   - component: {fileID: 3776457284040809435}
   - component: {fileID: 8393958212513112729}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4758,7 +4662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6286619716289938233}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Stone (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4779,5 +4683,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7273957940665741715}
-  m_Father: {fileID: 1759424032367097984}
+  m_Father: {fileID: 36428709261223751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

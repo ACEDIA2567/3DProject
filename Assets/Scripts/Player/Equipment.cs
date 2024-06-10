@@ -20,12 +20,14 @@ public class Equipment : MonoBehaviour
         condition = GetComponent<PlayerCondition>();
     }
 
+    // 장비 장착
     public void EquipNew(ItemData data)
     {
         UnEquip();
         curEquip = Instantiate(data.dropPrefab, equipParent).GetComponent<Equip>();
     }
 
+    // 장비 해제
     public void UnEquip()
     {
         if(curEquip != null)
@@ -35,6 +37,7 @@ public class Equipment : MonoBehaviour
         }
     }
 
+    // 장비 장착 후 좌클릭 시 행동
     public void OnAttackInput(InputAction.CallbackContext context)
     {
         if(context.phase == InputActionPhase.Performed && curEquip != null)

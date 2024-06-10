@@ -21,6 +21,7 @@ public class PlayerCraft : MonoBehaviour
         camera = Camera.main;
     }
 
+    // 아이템 사용 후 빌딩 아이템 일시 아이템 정보를 확인
     public void GetData(ItemData data, int index)
     {
         // 크래프트 모드일 경우 데이터 받지 못하게 함
@@ -38,6 +39,7 @@ public class PlayerCraft : MonoBehaviour
         }
     }
 
+    // 아이템 설치
     private void ViewerItemUpdate()
     {
         if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hitInfo, 10, layerMask))
@@ -47,6 +49,17 @@ public class PlayerCraft : MonoBehaviour
                 PreviwerObject.transform.position = hitInfo.point;
                 if (creaftMode && PreviwerObject.GetComponent<MeshRenderer>().material.color == Color.green)
                 {
+                    if (data.itemName == "SOS돌")
+                    {
+                        GameManager.Instance.stoneSOS = true;
+                        GameManager.Instance.EndingCheck();
+                    }
+                    else if (data.itemName == "모닥불")
+                    {
+                        GameManager.Instance.fireCheck = true;
+                        GameManager.Instance.EndingCheck();
+                    }
+
                     Instantiate(data.dropPrefab, hitInfo.point, Quaternion.identity);
                     data = null;
                     Destroy(PreviwerObject);
@@ -65,6 +78,7 @@ public class PlayerCraft : MonoBehaviour
         }
     }
 
+    // 좌클릭으로 오브젝트 설치
     public void OnBuild(InputAction.CallbackContext context)
     {
         if(context.phase == InputActionPhase.Started)

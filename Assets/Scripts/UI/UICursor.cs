@@ -24,6 +24,7 @@ public class UICursor : MonoBehaviour
         craftCursor = true;
     }
 
+    // 커서 모드 확인
     public void CursorCheck()
     {
         if (invenCursor && craftCursor)
@@ -35,7 +36,8 @@ public class UICursor : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
+    
+    // 아이템 정보 UI
     public void UIUpdate(ItemData data)
     {
         if (this.data != data || this.data == null)

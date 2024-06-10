@@ -38,11 +38,13 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    // 모닥불과 SOS설치시 엔딩 날짜 시작
     public void EndingCheck()
     {
         // 모닥불과 SOS돌을 모두 설치 했다면
         if(fireCheck && stoneSOS)
-        { 
+        {
+            Debug.Log("엔딩 시작");
             dayNightCycle.EndingStart();
         }
     }
