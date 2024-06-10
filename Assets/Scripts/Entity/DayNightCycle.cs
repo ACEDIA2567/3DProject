@@ -55,10 +55,9 @@ public class DayNightCycle : MonoBehaviour
 
     public void ChangeMorning()
     {
-        time = 0.2f;
         if (time < 0.2f || time > 0.8f)
         {
-
+            time = 0.2f;
         }
     }
 
