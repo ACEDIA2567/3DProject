@@ -9,8 +9,6 @@ public class UIInventory : MonoBehaviour
     public GameObject inventoryObject;
     private Slot[] slots;
 
-    int curEquipIndex;
-
     private void Start()
     {
         GameManager.Instance.Player.AddItem += Add;
@@ -81,6 +79,7 @@ public class UIInventory : MonoBehaviour
     // 아이템 있는지 확인
     public bool CheckItem(string name, int value)
     {
+        int addValue = value;
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i].data == null)
@@ -91,8 +90,8 @@ public class UIInventory : MonoBehaviour
             // 아이템이 있다면
             if (slots[i].data.itemName == name)
             {
-                // 제작 가능한 아이템보다 개수가 많다면
-                if (slots[i].slotQuantity >= value)
+                addValue -= slots[i].slotQuantity;
+                if (addValue <= 0)
                 {
                     return true;
                 }
@@ -114,12 +113,20 @@ public class UIInventory : MonoBehaviour
             // 아이템과 같은 이름 검색
             if (slots[i].data.itemName == name)
             {
-                slots[i].slotQuantity -= value;
-                if (slots[i].slotQuantity < 1 )
+                value -= slots[i].slotQuantity;
+                if (value > 0)
                 {
                     slots[i].Clear();
                 }
-                break;
+                else
+                {
+                    slots[i].slotQuantity -= value;
+                }
+
+                if (value <= 0)
+                {
+                    break;
+                }
             }
         }
         

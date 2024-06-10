@@ -145,7 +145,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         else
         {
             delayTime = 0;
-            Debug.Log(data);
             GameManager.Instance.Player.StartCo(TImePlus());
             Set();
         }
