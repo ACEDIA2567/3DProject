@@ -103,6 +103,7 @@ public class UIInventory : MonoBehaviour
     // 아이템 삭제
     public void RemoveItem(string name, int value)
     {
+        int Add = value;
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i].data == null)
@@ -113,17 +114,17 @@ public class UIInventory : MonoBehaviour
             // 아이템과 같은 이름 검색
             if (slots[i].data.itemName == name)
             {
-                value -= slots[i].slotQuantity;
-                if (value > 0)
+                Add -= slots[i].slotQuantity;
+                if (Add >= 0)
                 {
                     slots[i].Clear();
                 }
                 else
                 {
-                    slots[i].slotQuantity -= value;
+                    slots[i].slotQuantity = -Add;
                 }
 
-                if (value <= 0)
+                if (Add <= 0)
                 {
                     break;
                 }
