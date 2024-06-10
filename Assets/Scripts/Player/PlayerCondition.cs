@@ -43,6 +43,7 @@ public class PlayerCondition : MonoBehaviour,IDamagalbe
         }
     }
 
+    // 기력 사용
     public bool UseSp(float value)
     {
         if (sp.currentValue > value)
@@ -53,25 +54,31 @@ public class PlayerCondition : MonoBehaviour,IDamagalbe
         return false;
     }
 
+    // 체력 회복
     public void Heal(float value)
     {
         hp.Up(value);
     }
 
+    // 기력 회복
     public void Restore(float value)
     {
         sp.Up(value);
     }
 
+    // 배고픔 채우기
     public void Eat(float value)
     {
         ep.Up(value);
     }
 
+    // 목 마시기
     public void Drink(float value)
     {
         wp.Up(value);
     }
+
+    // 피해 입음
     public void TakePhysicalDamage(int value)
     {
 
@@ -82,6 +89,7 @@ public class PlayerCondition : MonoBehaviour,IDamagalbe
             Die();
         }
     }
+    // 죽기
     void Die()
     {
         GameManager.Instance.uiManager.GameOver();

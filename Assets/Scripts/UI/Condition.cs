@@ -23,6 +23,7 @@ public class Condition : MonoBehaviour
         Recovery();
     }
 
+    // 지속적인 회복
     private void Recovery()
     {
         if (currentValue < maxValue)
@@ -35,11 +36,13 @@ public class Condition : MonoBehaviour
         }
     }
 
+    // 증가
     public void Up(float value)
     {
         currentValue = Mathf.Min(currentValue + value, maxValue);
     }
 
+    // 감소
     public void Down(float value)
     {
         currentValue = Mathf.Max(0, currentValue - value);

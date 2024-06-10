@@ -56,6 +56,10 @@ public class DayNightCycle : MonoBehaviour
     public void ChangeMorning()
     {
         time = 0.2f;
+        if (time < 0.2f || time > 0.8f)
+        {
+
+        }
     }
 
     void UpdateLighting(Light lightSource, Gradient gradient, AnimationCurve intensityCurve)
@@ -85,6 +89,7 @@ public class DayNightCycle : MonoBehaviour
                 }
                 if (endingDay >= 2)
                 {
+                    // 엔딩 체크 후 2일이 지나고 맵에 헬리콥터 스폰
                     GameManager.Instance.spawnManger.SpawnHelicopter();
                 }
             }

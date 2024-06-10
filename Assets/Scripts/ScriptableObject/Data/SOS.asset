@@ -16,10 +16,10 @@ MonoBehaviour:
   description: "\uC5EC\uAE30\uC11C \uB3CC\uB85C SOS\uB97C \uC124\uCE58 \uD560 \uC218
     \uC788\uC744 \uAC83 \uAC19\uB2E4."
   type: 3
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 8b60d0c2d0c440c48910ff416b3507c9, type: 3}
   dropPrefab: {fileID: 7407113652607966292, guid: 730faa3972d05a84c85b4dc328994ea6, type: 3}
-  maxCount: 0
-  count: 0
+  maxCount: 1
+  count: 1
   consumableData: []
   delayTime: 0
   ViewObject: {fileID: 7407113652607966292, guid: 5c129b564b570764c8de8bb7518a864e, type: 3}

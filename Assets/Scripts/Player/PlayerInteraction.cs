@@ -10,14 +10,12 @@ public class PlayerInteraction : MonoBehaviour
     public LayerMask interactionLayer;
     public LayerMask tentLayer;
     public LayerMask waterLayer;
-    public LayerMask sosLayer;
     public TextMeshProUGUI interactionText;
     public GameObject sleepUI;
     private float rateTime = 0;
     private float checkTime = 0.1f;
     private bool waterCheck = false;
     private bool sleepCheck = false;
-    private bool sosCheck = false;
     new private Camera camera;
 
     private IItemInfo itemInfo;
@@ -37,6 +35,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    // Layer에 따라서 상호작용
     private void Interaction()
     {
         Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
@@ -75,12 +74,14 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    // 상호작용 가능한 아이템 정보 출력
     private void VoidText()
     {
         interactionText.gameObject.SetActive(true);
         interactionText.text = itemInfo.ItemText();
     }
 
+    // 상호작용 키 입력
     public void GetItem(InputAction.CallbackContext context)
     {
         if(context.phase == InputActionPhase.Performed)
@@ -106,7 +107,6 @@ public class PlayerInteraction : MonoBehaviour
         else if (context.phase == InputActionPhase.Canceled)
         {
             waterCheck = false;
-            sosCheck = false;
         }
     }
 }

@@ -14,11 +14,14 @@ public class SpawnManger : MonoBehaviour
         GameManager.Instance.spawnManger = this;   
     }
 
+    // 헬리콥터 랜덤 위치 생성
     public void SpawnHelicopter()
     {
         Transform transform = helicopterSpawnPos[Random.Range(0, helicopterSpawnPos.Length)];
         Instantiate(helicopter, transform.position, Quaternion.identity);
     }
+
+    // 곰 랜덤 위치에 생성
     public void SpawnBear()
     {
         // 스폰 위치를 4 중에 1개를 선택해서 그 위치에 스폰해야함

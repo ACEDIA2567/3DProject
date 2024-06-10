@@ -25,11 +25,13 @@ public class UIInventory : MonoBehaviour
         GameManager.Instance.Player.inventory = this;
     }
 
+    // Index의 값을 매개변수를 받아서 슬롯의 정보를 받아옴
     public Slot GetSlot(int index)
     {
         return slots[index];
     }
 
+    // 인벤토리에 아이템 추가
     void Add()
     {
         ItemData itemData = GameManager.Instance.Player.currentData;
@@ -60,6 +62,7 @@ public class UIInventory : MonoBehaviour
         }
     }
 
+    // Slot의 각 정보들 정보 갱신
     void UpdateUI()
     {
         for(int i = 0; i < slots.Length; i++)
@@ -75,6 +78,7 @@ public class UIInventory : MonoBehaviour
         }
     }
 
+    // 아이템 있는지 확인
     public bool CheckItem(string name, int value)
     {
         for (int i = 0; i < slots.Length; i++)
@@ -97,6 +101,7 @@ public class UIInventory : MonoBehaviour
         return false;
     }
 
+    // 아이템 삭제
     public void RemoveItem(string name, int value)
     {
         for (int i = 0; i < slots.Length; i++)
@@ -120,6 +125,7 @@ public class UIInventory : MonoBehaviour
         
     }
 
+    // 인벤토리 UI 키고 닫기
     public void OnInventory(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)

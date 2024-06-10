@@ -25,11 +25,6 @@ public class EquipTool : Equip
     private Animator animator;
     private Camera camera;
 
-    public EquipTool(Camera camera)
-    {
-        this.camera = camera;
-    }
-
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -51,6 +46,7 @@ public class EquipTool : Equip
         attacking = false;
     }
 
+    // 장비 애니메이션에 추가한
     public void OnHit()
     {
         Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));

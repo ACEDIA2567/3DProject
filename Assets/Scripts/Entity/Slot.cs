@@ -50,6 +50,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         slotQuantity = 0;
     }
 
+    // 아이템 쿨타임 적용
     public void DelayCheck()
     {
         if (data == null)
@@ -72,6 +73,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
     }
 
+    // 아이템 종류에 따라서 실행
     public void Use()
     {
         if (data.type == ItemType.Consumable)
@@ -88,6 +90,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
     }
 
+    // 코루틴
     IEnumerator TImePlus()
     {
         delayIcon.fillAmount = 0;
@@ -104,6 +107,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEnd
         }
     }
 
+    // 아이템 사용 시 소모형 아이템의 종류에 따라서 변경
     private void UseConsumable()
     {
         if (delayIcon.fillAmount != 1) return; 

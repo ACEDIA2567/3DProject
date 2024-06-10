@@ -11,6 +11,7 @@ public class Resource : MonoBehaviour
     public int capacy;
     public GatherType type;
 
+    // GatherType에 맞는 장비와 오브젝트 확인하여 채집 가능하게 함
     public void Gather(Vector3 hitPoint, Vector3 hitNormal, GatherType type)
     {
         if (this.type != type) return;

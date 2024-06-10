@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.uiManager = this;
     }
 
+    // 게임 클리어 시 UI활성화
     public void GameClear()
     {
         gameClearPanel.SetActive(true);
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+    // 게임 오버 시 UI활성화
     public void GameOver()
     {
         gameOverPanel.SetActive(true);

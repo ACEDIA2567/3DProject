@@ -76,6 +76,7 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     }
 
+    // 상태에 따른 AI기능 
     private void SetState(AIState state)
     {
         aiState = state;
@@ -102,7 +103,7 @@ public class NPC : MonoBehaviour, IDamagalbe
 
 
 
-
+    // 실시간 거리 체크
     void PassiveUpdate()
     {
         if (aiState == AIState.Wandering && agent.remainingDistance < 0.1f)
@@ -118,6 +119,7 @@ public class NPC : MonoBehaviour, IDamagalbe
     }
 
 
+    // NPC 주의 돌기
     void WanderToNewLocation()
     {
         if (aiState != AIState.Idle) return;
@@ -126,6 +128,8 @@ public class NPC : MonoBehaviour, IDamagalbe
         agent.SetDestination(GetWanderLocation());
 
     }
+
+    // 이동 할 랜덤 위치 변경
     Vector3 GetWanderLocation()
     {
         NavMeshHit hit;
@@ -149,7 +153,7 @@ public class NPC : MonoBehaviour, IDamagalbe
         return Vector3.Angle(transform.position - GameManager.Instance.Player.transform.position, transform.position + targetPos);
     }
 
-
+    // 공격 거리, 딜레이, 플레이어 체크 후 공격 기능
     void AttackingUpdate()
     {
         if (playerDistance < attackDistance && IsPlayerInFieldOfView())
@@ -192,6 +196,8 @@ public class NPC : MonoBehaviour, IDamagalbe
 
         }
     }
+
+    // 플레이어의 거리에서 오브젝트의 정면의 절반(정면에서 좌, 우 나누기 때문)에 각도에 플레이어가 있는지 확인
     bool IsPlayerInFieldOfView()
     {
         Vector3 directionToPlayer = GameManager.Instance.Player.transform.position - transform.position;
@@ -201,7 +207,7 @@ public class NPC : MonoBehaviour, IDamagalbe
 
    
 
-  
+    // 곰 피해 입히기
     public void TakePhysicalDamage(int damage)
     {
 
@@ -213,7 +219,7 @@ public class NPC : MonoBehaviour, IDamagalbe
 
     }
 
-
+    // 곰 죽고 고기 드랍
     void Die()
     {
         foreach (ItemData data in dropOnDeath)
