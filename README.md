@@ -29,17 +29,25 @@
 
 #### 아이템
 **소모품**
-> 체력을 상승시켜주는 아이템    
+> 체력을 상승시켜주는 아이템
+> ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/4b3b8588-3ab3-4363-8510-51a53913fdc8)
+
 > 기력을 상승시켜주는 아이템  
 > 일시적으로 이동속도를 상승시켜주는 아이템  
 > 일시적으로 점프높이를 상승시켜주는 아이템  
 
 **장비**
 > ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/e5c31d0a-ff99-4bb9-a582-e426d3fc6468)
+> ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/5eeb1f22-f405-41ed-a5fc-58ca222c63df)
+> ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/14d986d3-51c2-4e6c-8214-b15d018edf80)
+
+
 
 
 **재료**
 > 아이템 타입에만 적용
+> ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/37e93c46-c466-4c98-b81f-e69245a0ded0)
+
 
 #### 오브젝트
 **점프대: 플레이어가 밟으면 높이 강제로 점프**  
