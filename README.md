@@ -45,6 +45,23 @@
 > 일시적으로 이동속도를 상승시켜주는 아이템  
 > 일시적으로 점프높이를 상승시켜주는 아이템  
 
+**설치**  
+### 모닥불  
+1. 설치 가능  
+![image (1)](https://github.com/ACEDIA2567/3DProject/assets/101154683/4ca29249-a819-4ff2-9725-e10dda3249ef)     
+2. 설치 불가능   
+![image (2)](https://github.com/ACEDIA2567/3DProject/assets/101154683/9ca80f35-38ad-4bd6-9268-bf056d96c922)        
+3. 설치 완료   
+![image (3)](https://github.com/ACEDIA2567/3DProject/assets/101154683/735eac5e-789e-4ddc-99e2-7fcf51a4df9f)    
+
+### 텐트  
+1. 설치 가능     
+![image (5)](https://github.com/ACEDIA2567/3DProject/assets/101154683/7cf3429d-04ad-4479-8be1-7ee923a5792e)  
+2. 설치 불가능
+![image (4)](https://github.com/ACEDIA2567/3DProject/assets/101154683/b8532bf6-fae0-4e8b-9c20-5321ec702bf8)   
+4. 설치 완료  
+![image (6)](https://github.com/ACEDIA2567/3DProject/assets/101154683/baaec324-ed51-4388-964b-85b16f49f05f)  
+
 **장비**
 > ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/e5c31d0a-ff99-4bb9-a582-e426d3fc6468)
 > ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/5eeb1f22-f405-41ed-a5fc-58ca222c63df)
