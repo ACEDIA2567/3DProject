@@ -1,6 +1,8 @@
 # 3DProject
 ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/20bea5c0-ea4b-4113-be31-07163f9cc876)
 
+## 프로젝트 빌드 파일: https://drive.google.com/file/d/19HM3OKvJqiyrROqfRrLON8FR46uDJNDg/view?usp=sharing
+
 ## 게임 설명
 ### 구현 내용
 #### 플레이어
@@ -20,18 +22,17 @@
 - ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/d03eae03-6283-452d-9876-d06ffc8ae25c)
 
 - **아이템 마우스 가운데클릭으로 아아템 정보 확인**
-- ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/06a6b505-6fcd-47ac-af16-5e0d9c3ffc99)
+![ScreenRecorderProject8](https://github.com/ACEDIA2567/3DProject/assets/101154683/295408be-bea4-417e-901a-31c812448c8b)
 
 - **인벤토리의 아이템 좌클릭(드래그&드롭)으로 아이템 이동**
-- ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/6e3493c7-7b26-4787-81b6-edfc4dc61142)
+![ScreenRecorderProject8_1](https://github.com/ACEDIA2567/3DProject/assets/101154683/2f647262-eeea-4ab7-bb49-3df71517a2aa)
 
 - **인벤토리 아이템 이동 후 쿨타임 정보도 이동**
 
 #### 아이템
-**소모품**
+**소모품**  
+![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/4b3b8588-3ab3-4363-8510-51a53913fdc8)
 > 체력을 상승시켜주는 아이템
-> ![image](https://github.com/ACEDIA2567/3DProject/assets/167046611/4b3b8588-3ab3-4363-8510-51a53913fdc8)
-
 > 기력을 상승시켜주는 아이템  
 > 일시적으로 이동속도를 상승시켜주는 아이템  
 > 일시적으로 점프높이를 상승시켜주는 아이템  
