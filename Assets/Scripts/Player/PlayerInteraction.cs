@@ -57,6 +57,7 @@ public class PlayerInteraction : MonoBehaviour
             sleepCheck = true;
             itemInfo = hit.collider.GetComponent<IItemInfo>();
             VoidText();
+            Cursor.lockState = CursorLockMode.None;
         }
         else if (Physics.Raycast(ray, out hit, rayDistance, waterLayer))
         {
